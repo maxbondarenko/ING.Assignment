@@ -1,0 +1,18 @@
+xcodeproj 'ING.Assignment.xcodeproj'
+
+use_frameworks!
+
+target 'ING.Assignment' do
+
+pod 'OHHTTPStubs'
+pod 'XKPhotoScrollView'
+pod 'Sheriff', :git => 'https://github.com/gemr/Sheriff.git'
+pod 'Alamofire'
+pod 'AlamofireImage', '~> 3.1'
+pod 'PromiseKit'
+pod 'Fontello-Swift/Entypo'
+pod 'Fontello-Swift/ModernPictograms'
+
+
+end
+

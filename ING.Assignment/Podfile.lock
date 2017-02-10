@@ -1,0 +1,67 @@
+PODS:
+  - Alamofire (4.3.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - Fontello-Swift/Entypo (1.2):
+    - Fontello-Swift/Fontello
+  - Fontello-Swift/Fontello (1.2)
+  - Fontello-Swift/ModernPictograms (1.2):
+    - Fontello-Swift/Fontello
+  - OHHTTPStubs (5.2.3):
+    - OHHTTPStubs/Default (= 5.2.3)
+  - OHHTTPStubs/Core (5.2.3)
+  - OHHTTPStubs/Default (5.2.3):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.2.3):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.2.3):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.2.3)
+  - PromiseKit (4.1.3):
+    - PromiseKit/Foundation (= 4.1.3)
+    - PromiseKit/QuartzCore (= 4.1.3)
+    - PromiseKit/UIKit (= 4.1.3)
+  - PromiseKit/CorePromise (4.1.3)
+  - PromiseKit/Foundation (4.1.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.1.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.1.3):
+    - PromiseKit/CorePromise
+  - Sheriff (0.3.2)
+  - XKPhotoScrollView (0.1.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage (~> 3.1)
+  - Fontello-Swift/Entypo
+  - Fontello-Swift/ModernPictograms
+  - OHHTTPStubs
+  - PromiseKit
+  - Sheriff (from `https://github.com/gemr/Sheriff.git`)
+  - XKPhotoScrollView
+
+EXTERNAL SOURCES:
+  Sheriff:
+    :git: https://github.com/gemr/Sheriff.git
+
+CHECKOUT OPTIONS:
+  Sheriff:
+    :commit: 86091196d0ec3b43aac555dc5e3adec3ad8527fd
+    :git: https://github.com/gemr/Sheriff.git
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  Fontello-Swift: e36df108f387b8cea11ee833c4485363332119a0
+  OHHTTPStubs: e238cd5b66d8efa51c861db45895de8fe079f4a7
+  PromiseKit: 56baec63efa89210c023260879435a5a6b3bff00
+  Sheriff: d3d03fe6d35aa781e3f42d48f3fb53ed7d04958d
+  XKPhotoScrollView: 53c6eb0dfbab9492934121de5c75acc02818bb72
+
+PODFILE CHECKSUM: e0ef303322abab1fd54a7562c0c3ca6690b3071c
+
+COCOAPODS: 1.2.0.beta.1

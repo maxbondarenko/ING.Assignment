@@ -1,0 +1,6 @@
+framework module Pods_ING_Assignment {
+  umbrella header "Pods-ING.Assignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
