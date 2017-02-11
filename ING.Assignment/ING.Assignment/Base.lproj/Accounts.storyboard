@@ -41,63 +41,82 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIn-JZ-8Lv">
-                                                    <rect key="frame" x="8" y="18" width="359" height="21"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R43-9q-keL">
+                                                    <rect key="frame" x="8" y="8" width="359" height="69"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIn-JZ-8Lv">
+                                                            <rect key="frame" x="0.0" y="8" width="359" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="Ytm-ka-W0P"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NL63INGB0000000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJA-1Z-EOJ">
+                                                            <rect key="frame" x="0.0" y="36" width="205" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="XQe-Zu-4W7"/>
+                                                                <constraint firstAttribute="width" constant="205" id="dh6-vf-sS1"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="14"/>
+                                                            <color key="textColor" red="1" green="0.34509803919999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gx-fU-89F">
+                                                            <rect key="frame" x="328" y="26" width="21" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="21" id="AYL-VT-Vbh"/>
+                                                                <constraint firstAttribute="height" constant="21" id="nbf-ch-IEk"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 9999999," textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwC-3x-uTt">
+                                                            <rect key="frame" x="234" y="28" width="93" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="9Xh-bH-bGj"/>
+                                                                <constraint firstAttribute="width" constant="93" id="BlM-NP-iSh"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="Ytm-ka-W0P"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="7gx-fU-89F" secondAttribute="trailing" constant="2" id="02s-sm-7Xd"/>
+                                                        <constraint firstItem="yIn-JZ-8Lv" firstAttribute="trailing" secondItem="R43-9q-keL" secondAttribute="trailingMargin" constant="8" id="6sG-29-1cQ"/>
+                                                        <constraint firstItem="yIn-JZ-8Lv" firstAttribute="leading" secondItem="R43-9q-keL" secondAttribute="leadingMargin" constant="-8" id="JyX-Cz-s5n"/>
+                                                        <constraint firstItem="7gx-fU-89F" firstAttribute="top" secondItem="R43-9q-keL" secondAttribute="topMargin" constant="18" id="LVo-s5-gih"/>
+                                                        <constraint firstItem="qJA-1Z-EOJ" firstAttribute="leading" secondItem="R43-9q-keL" secondAttribute="leadingMargin" constant="-8" id="XPF-c6-drX"/>
+                                                        <constraint firstItem="pwC-3x-uTt" firstAttribute="top" secondItem="R43-9q-keL" secondAttribute="topMargin" constant="20" id="aHu-Z9-6Dg"/>
+                                                        <constraint firstAttribute="height" constant="69" id="cQb-PY-HuE"/>
+                                                        <constraint firstItem="7gx-fU-89F" firstAttribute="leading" secondItem="pwC-3x-uTt" secondAttribute="trailing" constant="1" id="iBX-0j-I7U"/>
+                                                        <constraint firstItem="qJA-1Z-EOJ" firstAttribute="top" secondItem="yIn-JZ-8Lv" secondAttribute="bottom" constant="7" id="qCP-ua-OTk"/>
+                                                        <constraint firstItem="yIn-JZ-8Lv" firstAttribute="top" secondItem="R43-9q-keL" secondAttribute="topMargin" id="sHt-52-3vb"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NL63INGB0000000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJA-1Z-EOJ">
-                                                    <rect key="frame" x="8" y="46" width="205" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="XQe-Zu-4W7"/>
-                                                        <constraint firstAttribute="width" constant="205" id="dh6-vf-sS1"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="14"/>
-                                                    <color key="textColor" red="1" green="0.34509803919999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gx-fU-89F">
-                                                    <rect key="frame" x="336" y="36" width="21" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="21" id="AYL-VT-Vbh"/>
-                                                        <constraint firstAttribute="height" constant="21" id="nbf-ch-IEk"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 9999999," textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwC-3x-uTt">
-                                                    <rect key="frame" x="242" y="38" width="93" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="9Xh-bH-bGj"/>
-                                                        <constraint firstAttribute="width" constant="93" id="BlM-NP-iSh"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                </view>
+                                                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQe-ul-yh4">
+                                                    <rect key="frame" x="8" y="18" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Check"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="yIn-JZ-8Lv" firstAttribute="trailing" secondItem="c2v-qa-3lC" secondAttribute="trailingMargin" id="Aew-g0-cJu"/>
-                                                <constraint firstItem="7gx-fU-89F" firstAttribute="top" secondItem="c2v-qa-3lC" secondAttribute="topMargin" constant="28" id="Rbt-Nu-doB"/>
-                                                <constraint firstItem="qJA-1Z-EOJ" firstAttribute="leading" secondItem="c2v-qa-3lC" secondAttribute="leadingMargin" id="Rvj-EX-08U"/>
-                                                <constraint firstItem="qJA-1Z-EOJ" firstAttribute="top" secondItem="yIn-JZ-8Lv" secondAttribute="bottom" constant="7" id="XJ8-qB-e89"/>
-                                                <constraint firstItem="yIn-JZ-8Lv" firstAttribute="leading" secondItem="c2v-qa-3lC" secondAttribute="leadingMargin" id="eF9-UX-5t4"/>
-                                                <constraint firstItem="7gx-fU-89F" firstAttribute="leading" secondItem="pwC-3x-uTt" secondAttribute="trailing" constant="1" id="fyO-o3-KhF"/>
-                                                <constraint firstItem="yIn-JZ-8Lv" firstAttribute="top" secondItem="c2v-qa-3lC" secondAttribute="topMargin" constant="10" id="liQ-p8-oa3"/>
-                                                <constraint firstItem="pwC-3x-uTt" firstAttribute="top" secondItem="c2v-qa-3lC" secondAttribute="topMargin" constant="30" id="qeN-mn-t3I"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="7gx-fU-89F" secondAttribute="trailing" constant="10" id="zW2-iG-uKH"/>
+                                                <constraint firstItem="R43-9q-keL" firstAttribute="leading" secondItem="c2v-qa-3lC" secondAttribute="leadingMargin" id="AGS-yT-MZY"/>
+                                                <constraint firstItem="R43-9q-keL" firstAttribute="top" secondItem="c2v-qa-3lC" secondAttribute="topMargin" id="Ii1-OY-qGb"/>
+                                                <constraint firstItem="R43-9q-keL" firstAttribute="trailing" secondItem="c2v-qa-3lC" secondAttribute="trailingMargin" id="Kwa-Ug-vsy"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="btnToggleHidden" destination="LQe-ul-yh4" id="i8e-WS-RN3"/>
                                             <outlet property="txtAccountIban" destination="qJA-1Z-EOJ" id="DAk-va-hS9"/>
                                             <outlet property="txtAccountName" destination="yIn-JZ-8Lv" id="m8v-Ea-nRD"/>
                                             <outlet property="txtAmount" destination="pwC-3x-uTt" id="krT-rR-svL"/>
                                             <outlet property="txtAmountCents" destination="7gx-fU-89F" id="Ge6-wp-xTk"/>
+                                            <outlet property="viewContainer" destination="R43-9q-keL" id="BRQ-lf-x5P"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountHeaderCell" rowHeight="37" id="bXO-fD-fAo" customClass="AccountHeaderCell" customModule="ING_Assignment" customModuleProvider="target">

@@ -95,7 +95,13 @@ extension UIView {
         
         
     }
-    
+    func removeOverlays(){
+        for sub in self.subviews{
+            if(sub is UIActivityIndicatorView && sub.tag == 667){
+                sub.removeFromSuperview()
+            }
+        }
+    }
     
     func addSpinnerInTheCenter(color: UIColor){
         

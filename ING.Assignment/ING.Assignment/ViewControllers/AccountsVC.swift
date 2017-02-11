@@ -13,14 +13,33 @@ class AccountsVC: UIViewController {
 
     @IBOutlet weak var lvAccounts: UITableView!
     var dsAccounts: AccountSetDTO?
+    var editMode = false
+    let eyeImage = UIImage.fontEntypoImage(icon: Entypo.Eye, fontSize: 20, color: UIColor.ingOrange())
+    
+    func toggleEditMode(){
+        editMode = !editMode
+    
+        if(editMode){
+            self.navigationItem.rightBarButtonItem?.image = nil
+            self.navigationItem.rightBarButtonItem?.title = "Done"
+            self.navigationItem.rightBarButtonItem?.tintColor = UIColor.ingOrange()
+        }
+        else{
+            
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: self.eyeImage, landscapeImagePhone: nil, style: UIBarButtonItemStyle.plain, target: self, action: #selector(onBtnEyeTapped))
+            
+        }
+        
+        lvAccounts.reloadData()
+        
+    }
     
     
     func initNavigationController(){
         self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.fontIngRegular(size: 16)]
         
-        let eyeImage = UIImage.fontEntypoImage(icon: Entypo.Eye, fontSize: 20, color: UIColor.ingOrange())
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: eyeImage, landscapeImagePhone: nil, style: UIBarButtonItemStyle.plain, target: self, action: #selector(onBtnEyeTapped))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: self.eyeImage, landscapeImagePhone: nil, style: UIBarButtonItemStyle.plain, target: self, action: #selector(onBtnEyeTapped))
     }
     
     override func viewDidLoad() {
@@ -49,8 +68,11 @@ class AccountsVC: UIViewController {
             }
     }
     
+    
     func onBtnEyeTapped(){
-        print("tapped")
+        self.toggleEditMode()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,12 +118,19 @@ extension AccountsVC: UITableViewDelegate, UITableViewDataSource{
         let cell:AccountCell = self.lvAccounts.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
         
         if(indexPath.section == 0){
-            var visibleAccounts = AccountDTO.filterVisibleAccounts(dsAccounts?.paymentAccounts ?? [])
-            cell.populateCell(account: (visibleAccounts[indexPath.row]))
+            var accountsToDisplay = dsAccounts?.paymentAccounts ?? []
+            if(!editMode){
+                accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+            }
+            cell.populateCell(account: (accountsToDisplay[indexPath.row]),editMode: self.editMode)
         }
         else{
-            var visibleAccounts = AccountDTO.filterVisibleAccounts(dsAccounts?.savingAccounts ?? [])
-            cell.populateCell(account: (visibleAccounts[indexPath.row]))
+            var accountsToDisplay = dsAccounts?.savingAccounts ?? []
+            if(!editMode){
+                accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+            }
+            
+            cell.populateCell(account: (accountsToDisplay[indexPath.row]),editMode: self.editMode)
         }
         
         return cell
@@ -113,12 +142,19 @@ extension AccountsVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if(section == 0){
-            let visibleAccounts = AccountDTO.filterVisibleAccounts(dsAccounts?.paymentAccounts ?? [])
-            return visibleAccounts.count
+            var accountsToDisplay = dsAccounts?.paymentAccounts ?? []
+            if(!editMode){
+                accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+            }
+            return accountsToDisplay.count
         }
         else{
-            let visibleAccounts = AccountDTO.filterVisibleAccounts(dsAccounts?.savingAccounts ?? [])
-            return visibleAccounts.count
+            var accountsToDisplay = dsAccounts?.savingAccounts ?? []
+            if(!editMode){
+                accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+            }
+            
+            return accountsToDisplay.count
         }
         
     }
