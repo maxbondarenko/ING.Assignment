@@ -34,7 +34,7 @@ class Api {
                     let json = (try? JSONSerialization.jsonObject(with: response.data!, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: AnyObject]
                     
                     
-                    if let dto = AccountSetDTO().populateObject(dict: (json as? NSDictionary)!){
+                    if let dto = AccountSetDTO().populate(dict: (json as? NSDictionary)!){
                         DispatchQueue.main.async(execute: {
                             success(dto)
                         })

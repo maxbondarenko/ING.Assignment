@@ -15,16 +15,20 @@ class AccountsVC: UIViewController {
     var dsAccounts: AccountSetDTO?
     
     
+    func initNavigationController(){
+        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.fontIngRegular(size: 16)]
+        
+        let eyeImage = UIImage.fontEntypoImage(icon: Entypo.Eye, fontSize: 20, color: UIColor.ingOrange())
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: eyeImage, landscapeImagePhone: nil, style: UIBarButtonItemStyle.plain, target: self, action: #selector(onBtnEyeTapped))
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let font = UIFont.fontIngBold(size: 20)
-        
-        
-        let eyeImage = UIImage.fontEntypoImage(icon: Entypo.Eye, fontSize: 20, color: UIColor.ingOrange())
     
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: eyeImage, landscapeImagePhone: nil, style: UIBarButtonItemStyle.plain, target: self, action: #selector(onBtnEyeTapped))
+        initNavigationController()
         
         ApiStub().stubGetAccounts()
         Api.getAccounts()
@@ -42,7 +46,7 @@ class AccountsVC: UIViewController {
                 ApiStub().clearStubs()
 
                 
-        }
+            }
     }
     
     func onBtnEyeTapped(){
@@ -62,25 +66,45 @@ extension AccountsVC: UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0
+        return AccountHeaderCell.getHeight()
     }
     
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return AccountType.casesCount()
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        var title = ""
+        if(section == 0){
+            title = AccountType.payment.getGroupTitle()
+        }
+        else{
+            title = AccountType.saving.getGroupTitle()
+        }
+        
+        let cell:AccountHeaderCell = self.lvAccounts.dequeueReusableCell(withIdentifier: "AccountHeaderCell") as! AccountHeaderCell
+        cell.populateCell(title: title)
+        
+        return cell
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
- 
-            let cell:AccountCell = self.lvAccounts.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
-            
-            cell.populateCell(account: (self.dsAccounts?.accounts[indexPath.row])!)
+        let cell:AccountCell = self.lvAccounts.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
         
-            return cell
+        if(indexPath.section == 0){
+            var visibleAccounts = AccountDTO.filterVisibleAccounts(dsAccounts?.paymentAccounts ?? [])
+            cell.populateCell(account: (visibleAccounts[indexPath.row]))
+        }
+        else{
+            var visibleAccounts = AccountDTO.filterVisibleAccounts(dsAccounts?.savingAccounts ?? [])
+            cell.populateCell(account: (visibleAccounts[indexPath.row]))
+        }
         
+        return cell
     }
     
     
@@ -88,7 +112,14 @@ extension AccountsVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return dsAccounts?.accounts.count ?? 0
+        if(section == 0){
+            let visibleAccounts = AccountDTO.filterVisibleAccounts(dsAccounts?.paymentAccounts ?? [])
+            return visibleAccounts.count
+        }
+        else{
+            let visibleAccounts = AccountDTO.filterVisibleAccounts(dsAccounts?.savingAccounts ?? [])
+            return visibleAccounts.count
+        }
         
     }
     

@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import Darwin
 
 class AccountDTO {
 
-
-    var balanceInCents: NSNumber = 0
+    var balanceInCents: Int64 = 0
     var currency: AccountCurrency?
     var id: NSNumber = 0
     var name: String = ""
@@ -22,15 +22,58 @@ class AccountDTO {
     var iban: String = ""
     
     var linkedAccountId: NSNumber?
+    weak var linkedAccount: AccountDTO?
+    
+    
     var productName: String?
     var productType: NSNumber?
     var savingsTargetReached: Bool?
-    var targetAmountInCents: NSNumber?
+    var targetAmountInCents: Int64?
     
-    func populateObject(dict: NSDictionary) -> AccountDTO? {
+    class func filterVisibleAccounts(_ accounts:[AccountDTO]) -> [AccountDTO]
+    {
+        return accounts.filter({ $0.isVisible == true }) 
+    }
+    
+    func getCurrencySign()->String{
+        if(self.currency == AccountCurrency.eur){
+            return "€"
+        }
+        
+        else{
+            return ""
+        }
+    }
+    
+    func getBalanceEuros()->String{
+        
+        let floored = String(format: "%.0f", Double(self.balanceInCents) / 100.0)
+        return floored
+
+    }
+    
+    func getBalanceRemainderCents() -> String{
+        
+        let f = NumberFormatter()
+        
+        f.negativePrefix = ""
+        
+        f.decimalSeparator = ""
+        f.maximumIntegerDigits = 0
+        f.maximumFractionDigits = 2
+        f.minimumFractionDigits = 2
+        
+        let number = Double(self.balanceInCents) / 100.0
+        let res = f.string(from: NSNumber(value: number))
+        
+        return res ?? "00"
+        
+    }
+    
+    func populate(dict: NSDictionary) -> AccountDTO? {
         
         
-        self.balanceInCents = (dict["accountBalanceInCents"] as? NSNumber) ?? 0
+        self.balanceInCents = (dict["accountBalanceInCents"] as? Int64) ?? 0
         self.currency = AccountCurrency(rawValue: (dict["accountCurrency"] as? String)!)
         self.id = (dict["accountId"] as? NSNumber) ?? 0
         self.name = (dict["accountName"] as? String) ?? ""
@@ -44,7 +87,7 @@ class AccountDTO {
         self.productName = (dict["productName"] as? String)
         self.productType = (dict["productType"] as? NSNumber)
         self.savingsTargetReached = (dict["savingsTargetReached"] as? Bool)
-        self.targetAmountInCents = (dict["targetAmountInCents"] as? NSNumber)
+        self.targetAmountInCents = (dict["targetAmountInCents"] as? Int64)
         
         return self
         

@@ -6,9 +6,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="INGMeWeb-Bold.ttf">
+            <string>INGMe-Bold</string>
+        </array>
         <array key="INGMeWeb-Regular.ttf">
             <string>INGMe</string>
         </array>
@@ -26,28 +30,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e2a-t1-1FW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e2a-t1-1FW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountCell" rowHeight="100" id="CMt-gf-M8Z" customClass="AccountCell" customModule="ING_Assignment" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountCell" rowHeight="85" id="CMt-gf-M8Z" customClass="AccountCell" customModule="ING_Assignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CMt-gf-M8Z" id="c2v-qa-3lC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIn-JZ-8Lv">
-                                                    <rect key="frame" x="8" y="17" width="317" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIn-JZ-8Lv">
+                                                    <rect key="frame" x="8" y="18" width="359" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Ytm-ka-W0P"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NL63INGB0000000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJA-1Z-EOJ">
+                                                    <rect key="frame" x="8" y="46" width="205" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="XQe-Zu-4W7"/>
+                                                        <constraint firstAttribute="width" constant="205" id="dh6-vf-sS1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.34509803919999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gx-fU-89F">
+                                                    <rect key="frame" x="336" y="36" width="21" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="21" id="AYL-VT-Vbh"/>
+                                                        <constraint firstAttribute="height" constant="21" id="nbf-ch-IEk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 9999999," textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwC-3x-uTt">
+                                                    <rect key="frame" x="242" y="38" width="93" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="9Xh-bH-bGj"/>
+                                                        <constraint firstAttribute="width" constant="93" id="BlM-NP-iSh"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yIn-JZ-8Lv" firstAttribute="trailing" secondItem="c2v-qa-3lC" secondAttribute="trailingMargin" id="Aew-g0-cJu"/>
+                                                <constraint firstItem="7gx-fU-89F" firstAttribute="top" secondItem="c2v-qa-3lC" secondAttribute="topMargin" constant="28" id="Rbt-Nu-doB"/>
+                                                <constraint firstItem="qJA-1Z-EOJ" firstAttribute="leading" secondItem="c2v-qa-3lC" secondAttribute="leadingMargin" id="Rvj-EX-08U"/>
+                                                <constraint firstItem="qJA-1Z-EOJ" firstAttribute="top" secondItem="yIn-JZ-8Lv" secondAttribute="bottom" constant="7" id="XJ8-qB-e89"/>
+                                                <constraint firstItem="yIn-JZ-8Lv" firstAttribute="leading" secondItem="c2v-qa-3lC" secondAttribute="leadingMargin" id="eF9-UX-5t4"/>
+                                                <constraint firstItem="7gx-fU-89F" firstAttribute="leading" secondItem="pwC-3x-uTt" secondAttribute="trailing" constant="1" id="fyO-o3-KhF"/>
+                                                <constraint firstItem="yIn-JZ-8Lv" firstAttribute="top" secondItem="c2v-qa-3lC" secondAttribute="topMargin" constant="10" id="liQ-p8-oa3"/>
+                                                <constraint firstItem="pwC-3x-uTt" firstAttribute="top" secondItem="c2v-qa-3lC" secondAttribute="topMargin" constant="30" id="qeN-mn-t3I"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7gx-fU-89F" secondAttribute="trailing" constant="10" id="zW2-iG-uKH"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="txtAccountIban" destination="qJA-1Z-EOJ" id="DAk-va-hS9"/>
                                             <outlet property="txtAccountName" destination="yIn-JZ-8Lv" id="m8v-Ea-nRD"/>
+                                            <outlet property="txtAmount" destination="pwC-3x-uTt" id="krT-rR-svL"/>
+                                            <outlet property="txtAmountCents" destination="7gx-fU-89F" id="Ge6-wp-xTk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountHeaderCell" rowHeight="37" id="bXO-fD-fAo" customClass="AccountHeaderCell" customModule="ING_Assignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="113" width="375" height="37"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bXO-fD-fAo" id="VzV-dQ-kOe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNu-2c-Wov">
+                                                    <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="6P5-TN-MM6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="INGMe-Bold" family="ING Me" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.34509803919999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TNu-2c-Wov" firstAttribute="leading" secondItem="VzV-dQ-kOe" secondAttribute="leadingMargin" id="Qc0-dR-kts"/>
+                                                <constraint firstItem="TNu-2c-Wov" firstAttribute="trailing" secondItem="VzV-dQ-kOe" secondAttribute="trailingMargin" id="R8X-lR-6jv"/>
+                                                <constraint firstItem="TNu-2c-Wov" firstAttribute="top" secondItem="VzV-dQ-kOe" secondAttribute="topMargin" id="Y9o-sj-wd3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="txtAccountGroupType" destination="TNu-2c-Wov" id="w0F-T5-kbb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

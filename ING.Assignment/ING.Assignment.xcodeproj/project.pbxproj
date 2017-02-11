@@ -39,6 +39,7 @@
 		AAD581EF1E4E882D0072669C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581EE1E4E882D0072669C /* UIFont.swift */; };
 		AAD581F21E4E8A860072669C /* INGMeWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F01E4E8A860072669C /* INGMeWeb-Bold.ttf */; };
 		AAD581F31E4E8A860072669C /* INGMeWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F11E4E8A860072669C /* INGMeWeb-Regular.ttf */; };
+		AAD581F71E4F9BD90072669C /* AccountHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581F61E4F9BD90072669C /* AccountHeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		AAD581EE1E4E882D0072669C /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = Extensions/UIFont.swift; sourceTree = "<group>"; };
 		AAD581F01E4E8A860072669C /* INGMeWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "INGMeWeb-Bold.ttf"; path = "Assets/Fonts/INGMeWeb-Bold.ttf"; sourceTree = "<group>"; };
 		AAD581F11E4E8A860072669C /* INGMeWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "INGMeWeb-Regular.ttf"; path = "Assets/Fonts/INGMeWeb-Regular.ttf"; sourceTree = "<group>"; };
+		AAD581F61E4F9BD90072669C /* AccountHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountHeaderCell.swift; path = ViewControllers/Cells/AccountHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				AAD581E71E4E84350072669C /* AccountCell.swift */,
+				AAD581F61E4F9BD90072669C /* AccountHeaderCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				AAB09D9E1E4E5C26004D4EE5 /* NSDate.swift in Sources */,
 				AAB09D831E4E5475004D4EE5 /* AccountCurrency.swift in Sources */,
 				AAB09D841E4E5475004D4EE5 /* AccountType.swift in Sources */,
+				AAD581F71E4F9BD90072669C /* AccountHeaderCell.swift in Sources */,
 				AAB09D9D1E4E5C26004D4EE5 /* NSAttributedString.swift in Sources */,
 				AAB09D821E4E5475004D4EE5 /* ReturnCode.swift in Sources */,
 				AAB09DA11E4E5C26004D4EE5 /* UIColor.swift in Sources */,

@@ -23,5 +23,7 @@ extension UIColor{
     class func ingOrange() -> UIColor{
         return UIColor.rgbColor(rgbValue: 0xff5812)
     }
-    
+    class func ingLightGray() -> UIColor{
+        return UIColor.rgbColor(rgbValue: 0xeeeeee)
+    }
 }

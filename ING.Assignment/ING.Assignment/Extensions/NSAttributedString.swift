@@ -30,11 +30,11 @@ extension NSAttributedString {
     
 
     
-    func appendHelvetica(text: String, size: Int, color: UIColor) -> NSMutableAttributedString{
+    func appendIngMe(text: String, size: Int, color: UIColor) -> NSMutableAttributedString{
         
         let attributedString = NSMutableAttributedString(string: text)
         
-        let attrs = [NSFontAttributeName : UIFont(name: "HelveticaNeue", size: CGFloat(size)),
+        let attrs = [NSFontAttributeName : UIFont.fontIngRegular(size: size),
                       NSForegroundColorAttributeName: color]
         
         attributedString.addAttributes(attrs, range: NSRange.init(location: 0, length: text.characters.count - 0))
