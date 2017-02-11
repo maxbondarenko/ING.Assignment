@@ -9,13 +9,36 @@
 /* Begin PBXBuildFile section */
 		7F9D5CD1994FF8498391B29E /* Pods_ING_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D63955697E338C72B043FB /* Pods_ING_Assignment.framework */; };
 		AA0C49321E4E403500D6E89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C49311E4E403500D6E89B /* AppDelegate.swift */; };
-		AA0C49341E4E403500D6E89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C49331E4E403500D6E89B /* ViewController.swift */; };
-		AA0C49371E4E403500D6E89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0C49351E4E403500D6E89B /* Main.storyboard */; };
+		AA0C49371E4E403500D6E89B /* Accounts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0C49351E4E403500D6E89B /* Accounts.storyboard */; };
 		AA0C49391E4E403500D6E89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0C49381E4E403500D6E89B /* Assets.xcassets */; };
 		AA0C493C1E4E403500D6E89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0C493A1E4E403500D6E89B /* LaunchScreen.storyboard */; };
 		AA0C49471E4E403500D6E89B /* ING_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C49461E4E403500D6E89B /* ING_AssignmentTests.swift */; };
 		AA0C49521E4E403500D6E89B /* ING_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C49511E4E403500D6E89B /* ING_AssignmentUITests.swift */; };
+		AAB09D761E4E5338004D4EE5 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D751E4E5338004D4EE5 /* AccountsVC.swift */; };
+		AAB09D781E4E5468004D4EE5 /* ApiStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D771E4E5468004D4EE5 /* ApiStub.swift */; };
+		AAB09D801E4E5475004D4EE5 /* AccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */; };
+		AAB09D821E4E5475004D4EE5 /* ReturnCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7C1E4E5475004D4EE5 /* ReturnCode.swift */; };
+		AAB09D831E4E5475004D4EE5 /* AccountCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7D1E4E5475004D4EE5 /* AccountCurrency.swift */; };
+		AAB09D841E4E5475004D4EE5 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7E1E4E5475004D4EE5 /* AccountType.swift */; };
+		AAB09D8A1E4E5600004D4EE5 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D871E4E5600004D4EE5 /* Api.swift */; };
+		AAB09D8C1E4E5600004D4EE5 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D891E4E5600004D4EE5 /* UrlBuilder.swift */; };
+		AAB09D8E1E4E566E004D4EE5 /* GetAccountsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = AAB09D8D1E4E566E004D4EE5 /* GetAccountsSuccess.json */; };
+		AAB09D9D1E4E5C26004D4EE5 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D901E4E5C26004D4EE5 /* NSAttributedString.swift */; };
+		AAB09D9E1E4E5C26004D4EE5 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D911E4E5C26004D4EE5 /* NSDate.swift */; };
+		AAB09D9F1E4E5C26004D4EE5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D921E4E5C26004D4EE5 /* String.swift */; };
+		AAB09DA01E4E5C26004D4EE5 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D931E4E5C26004D4EE5 /* UIButton.swift */; };
+		AAB09DA11E4E5C26004D4EE5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D941E4E5C26004D4EE5 /* UIColor.swift */; };
+		AAB09DA31E4E5C26004D4EE5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D961E4E5C26004D4EE5 /* UIImage.swift */; };
+		AAB09DA41E4E5C26004D4EE5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D971E4E5C26004D4EE5 /* UIImageView.swift */; };
+		AAB09DA61E4E5C26004D4EE5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D991E4E5C26004D4EE5 /* UITableView.swift */; };
+		AAB09DA71E4E5C26004D4EE5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D9A1E4E5C26004D4EE5 /* UIView.swift */; };
+		AAB09DA81E4E5C26004D4EE5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D9B1E4E5C26004D4EE5 /* UIViewController.swift */; };
+		AAB09DAA1E4E6341004D4EE5 /* AccountSetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */; };
 		AAB6282C1E4E4D270076B925 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AAB6282B1E4E4D270076B925 /* Podfile */; };
+		AAD581E81E4E84350072669C /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581E71E4E84350072669C /* AccountCell.swift */; };
+		AAD581EF1E4E882D0072669C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581EE1E4E882D0072669C /* UIFont.swift */; };
+		AAD581F21E4E8A860072669C /* INGMeWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F01E4E8A860072669C /* INGMeWeb-Bold.ttf */; };
+		AAD581F31E4E8A860072669C /* INGMeWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F11E4E8A860072669C /* INGMeWeb-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +64,7 @@
 		72D63955697E338C72B043FB /* Pods_ING_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ING_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0C492E1E4E403500D6E89B /* ING.Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ING.Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0C49311E4E403500D6E89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA0C49331E4E403500D6E89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA0C49361E4E403500D6E89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA0C49361E4E403500D6E89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Accounts.storyboard; sourceTree = "<group>"; };
 		AA0C49381E4E403500D6E89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA0C493B1E4E403500D6E89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA0C493D1E4E403500D6E89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +74,31 @@
 		AA0C494D1E4E403500D6E89B /* ING.AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ING.AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0C49511E4E403500D6E89B /* ING_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ING_AssignmentUITests.swift; sourceTree = "<group>"; };
 		AA0C49531E4E403500D6E89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAB6282B1E4E4D270076B925 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		AAB09D751E4E5338004D4EE5 /* AccountsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountsVC.swift; path = ViewControllers/AccountsVC.swift; sourceTree = "<group>"; };
+		AAB09D771E4E5468004D4EE5 /* ApiStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiStub.swift; path = JsonStubs/ApiStub.swift; sourceTree = "<group>"; };
+		AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountDTO.swift; path = DataTransferObjects/AccountDTO.swift; sourceTree = "<group>"; };
+		AAB09D7C1E4E5475004D4EE5 /* ReturnCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnCode.swift; sourceTree = "<group>"; };
+		AAB09D7D1E4E5475004D4EE5 /* AccountCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCurrency.swift; sourceTree = "<group>"; };
+		AAB09D7E1E4E5475004D4EE5 /* AccountType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
+		AAB09D871E4E5600004D4EE5 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Api.swift; path = WebApi/Api.swift; sourceTree = "<group>"; };
+		AAB09D891E4E5600004D4EE5 /* UrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UrlBuilder.swift; path = WebApi/UrlBuilder.swift; sourceTree = "<group>"; };
+		AAB09D8D1E4E566E004D4EE5 /* GetAccountsSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = GetAccountsSuccess.json; path = JsonStubs/Accounts/GetAccountsSuccess.json; sourceTree = "<group>"; };
+		AAB09D901E4E5C26004D4EE5 /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSAttributedString.swift; path = Extensions/NSAttributedString.swift; sourceTree = "<group>"; };
+		AAB09D911E4E5C26004D4EE5 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSDate.swift; path = Extensions/NSDate.swift; sourceTree = "<group>"; };
+		AAB09D921E4E5C26004D4EE5 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = Extensions/String.swift; sourceTree = "<group>"; };
+		AAB09D931E4E5C26004D4EE5 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = Extensions/UIButton.swift; sourceTree = "<group>"; };
+		AAB09D941E4E5C26004D4EE5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Extensions/UIColor.swift; sourceTree = "<group>"; };
+		AAB09D961E4E5C26004D4EE5 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Extensions/UIImage.swift; sourceTree = "<group>"; };
+		AAB09D971E4E5C26004D4EE5 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = Extensions/UIImageView.swift; sourceTree = "<group>"; };
+		AAB09D991E4E5C26004D4EE5 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableView.swift; path = Extensions/UITableView.swift; sourceTree = "<group>"; };
+		AAB09D9A1E4E5C26004D4EE5 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Extensions/UIView.swift; sourceTree = "<group>"; };
+		AAB09D9B1E4E5C26004D4EE5 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Extensions/UIViewController.swift; sourceTree = "<group>"; };
+		AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountSetDTO.swift; path = DataTransferObjects/AccountSetDTO.swift; sourceTree = "<group>"; };
+		AAB6282B1E4E4D270076B925 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AAD581E71E4E84350072669C /* AccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCell.swift; path = ViewControllers/Cells/AccountCell.swift; sourceTree = "<group>"; };
+		AAD581EE1E4E882D0072669C /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = Extensions/UIFont.swift; sourceTree = "<group>"; };
+		AAD581F01E4E8A860072669C /* INGMeWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "INGMeWeb-Bold.ttf"; path = "Assets/Fonts/INGMeWeb-Bold.ttf"; sourceTree = "<group>"; };
+		AAD581F11E4E8A860072669C /* INGMeWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "INGMeWeb-Regular.ttf"; path = "Assets/Fonts/INGMeWeb-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +138,7 @@
 		AA0C49251E4E403500D6E89B = {
 			isa = PBXGroup;
 			children = (
+				AAD581E91E4E87940072669C /* Fonts */,
 				AAB6282B1E4E4D270076B925 /* Podfile */,
 				AA0C49301E4E403500D6E89B /* ING.Assignment */,
 				AA0C49451E4E403500D6E89B /* ING.AssignmentTests */,
@@ -115,9 +162,13 @@
 		AA0C49301E4E403500D6E89B /* ING.Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				AAB09D731E4E51D2004D4EE5 /* ApiStubs */,
+				AAB09D721E4E51B5004D4EE5 /* DataTransferObjects */,
+				AAB09D711E4E518D004D4EE5 /* WebApi */,
+				AAB09D701E4E5183004D4EE5 /* Extensions */,
+				AAB09D741E4E51F3004D4EE5 /* ViewControllers */,
 				AA0C49311E4E403500D6E89B /* AppDelegate.swift */,
-				AA0C49331E4E403500D6E89B /* ViewController.swift */,
-				AA0C49351E4E403500D6E89B /* Main.storyboard */,
+				AA0C49351E4E403500D6E89B /* Accounts.storyboard */,
 				AA0C49381E4E403500D6E89B /* Assets.xcassets */,
 				AA0C493A1E4E403500D6E89B /* LaunchScreen.storyboard */,
 				AA0C493D1E4E403500D6E89B /* Info.plist */,
@@ -150,6 +201,89 @@
 				1AFA208C337AC80648B4F5AB /* Pods-ING.Assignment.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAB09D701E4E5183004D4EE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAB09D901E4E5C26004D4EE5 /* NSAttributedString.swift */,
+				AAB09D911E4E5C26004D4EE5 /* NSDate.swift */,
+				AAB09D921E4E5C26004D4EE5 /* String.swift */,
+				AAB09D931E4E5C26004D4EE5 /* UIButton.swift */,
+				AAB09D941E4E5C26004D4EE5 /* UIColor.swift */,
+				AAB09D961E4E5C26004D4EE5 /* UIImage.swift */,
+				AAB09D971E4E5C26004D4EE5 /* UIImageView.swift */,
+				AAB09D991E4E5C26004D4EE5 /* UITableView.swift */,
+				AAB09D9A1E4E5C26004D4EE5 /* UIView.swift */,
+				AAB09D9B1E4E5C26004D4EE5 /* UIViewController.swift */,
+				AAD581EE1E4E882D0072669C /* UIFont.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AAB09D711E4E518D004D4EE5 /* WebApi */ = {
+			isa = PBXGroup;
+			children = (
+				AAB09D871E4E5600004D4EE5 /* Api.swift */,
+				AAB09D891E4E5600004D4EE5 /* UrlBuilder.swift */,
+			);
+			name = WebApi;
+			sourceTree = "<group>";
+		};
+		AAB09D721E4E51B5004D4EE5 /* DataTransferObjects */ = {
+			isa = PBXGroup;
+			children = (
+				AAB09D7B1E4E5475004D4EE5 /* Enums */,
+				AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */,
+				AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */,
+			);
+			name = DataTransferObjects;
+			sourceTree = "<group>";
+		};
+		AAB09D731E4E51D2004D4EE5 /* ApiStubs */ = {
+			isa = PBXGroup;
+			children = (
+				AAB09D8D1E4E566E004D4EE5 /* GetAccountsSuccess.json */,
+				AAB09D771E4E5468004D4EE5 /* ApiStub.swift */,
+			);
+			name = ApiStubs;
+			sourceTree = "<group>";
+		};
+		AAB09D741E4E51F3004D4EE5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD581E61E4E84010072669C /* Cells */,
+				AAB09D751E4E5338004D4EE5 /* AccountsVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AAB09D7B1E4E5475004D4EE5 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AAB09D7C1E4E5475004D4EE5 /* ReturnCode.swift */,
+				AAB09D7D1E4E5475004D4EE5 /* AccountCurrency.swift */,
+				AAB09D7E1E4E5475004D4EE5 /* AccountType.swift */,
+			);
+			name = Enums;
+			path = DataTransferObjects/Enums;
+			sourceTree = "<group>";
+		};
+		AAD581E61E4E84010072669C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AAD581E71E4E84350072669C /* AccountCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		AAD581E91E4E87940072669C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AAD581F01E4E8A860072669C /* INGMeWeb-Bold.ttf */,
+				AAD581F11E4E8A860072669C /* INGMeWeb-Regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +400,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0C493C1E4E403500D6E89B /* LaunchScreen.storyboard in Resources */,
+				AAD581F31E4E8A860072669C /* INGMeWeb-Regular.ttf in Resources */,
+				AAD581F21E4E8A860072669C /* INGMeWeb-Bold.ttf in Resources */,
 				AA0C49391E4E403500D6E89B /* Assets.xcassets in Resources */,
 				AAB6282C1E4E4D270076B925 /* Podfile in Resources */,
-				AA0C49371E4E403500D6E89B /* Main.storyboard in Resources */,
+				AA0C49371E4E403500D6E89B /* Accounts.storyboard in Resources */,
+				AAB09D8E1E4E566E004D4EE5 /* GetAccountsSuccess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +453,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		58FDD54F5D3100C374118323 /* [CP] Copy Pods Resources */ = {
@@ -341,8 +478,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0C49341E4E403500D6E89B /* ViewController.swift in Sources */,
+				AAB09DA01E4E5C26004D4EE5 /* UIButton.swift in Sources */,
+				AAB09DA31E4E5C26004D4EE5 /* UIImage.swift in Sources */,
+				AAB09D801E4E5475004D4EE5 /* AccountDTO.swift in Sources */,
+				AAB09D761E4E5338004D4EE5 /* AccountsVC.swift in Sources */,
+				AAB09DAA1E4E6341004D4EE5 /* AccountSetDTO.swift in Sources */,
+				AAD581E81E4E84350072669C /* AccountCell.swift in Sources */,
+				AAD581EF1E4E882D0072669C /* UIFont.swift in Sources */,
+				AAB09DA81E4E5C26004D4EE5 /* UIViewController.swift in Sources */,
 				AA0C49321E4E403500D6E89B /* AppDelegate.swift in Sources */,
+				AAB09D9E1E4E5C26004D4EE5 /* NSDate.swift in Sources */,
+				AAB09D831E4E5475004D4EE5 /* AccountCurrency.swift in Sources */,
+				AAB09D841E4E5475004D4EE5 /* AccountType.swift in Sources */,
+				AAB09D9D1E4E5C26004D4EE5 /* NSAttributedString.swift in Sources */,
+				AAB09D821E4E5475004D4EE5 /* ReturnCode.swift in Sources */,
+				AAB09DA11E4E5C26004D4EE5 /* UIColor.swift in Sources */,
+				AAB09DA71E4E5C26004D4EE5 /* UIView.swift in Sources */,
+				AAB09DA41E4E5C26004D4EE5 /* UIImageView.swift in Sources */,
+				AAB09DA61E4E5C26004D4EE5 /* UITableView.swift in Sources */,
+				AAB09D8C1E4E5600004D4EE5 /* UrlBuilder.swift in Sources */,
+				AAB09D8A1E4E5600004D4EE5 /* Api.swift in Sources */,
+				AAB09D9F1E4E5C26004D4EE5 /* String.swift in Sources */,
+				AAB09D781E4E5468004D4EE5 /* ApiStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,12 +535,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA0C49351E4E403500D6E89B /* Main.storyboard */ = {
+		AA0C49351E4E403500D6E89B /* Accounts.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AA0C49361E4E403500D6E89B /* Base */,
 			);
-			name = Main.storyboard;
+			name = Accounts.storyboard;
 			sourceTree = "<group>";
 		};
 		AA0C493A1E4E403500D6E89B /* LaunchScreen.storyboard */ = {

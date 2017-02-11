@@ -2,6 +2,10 @@
   "images" : [
     {
       "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
       "filename" : "NotificationIcon@2x.png",
       "scale" : "2x"
     },
@@ -14,6 +18,10 @@
       "idiom" : "ipad",
       "filename" : "NotificationIcon~ipad.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x"
     }
   ],
   "info" : {
