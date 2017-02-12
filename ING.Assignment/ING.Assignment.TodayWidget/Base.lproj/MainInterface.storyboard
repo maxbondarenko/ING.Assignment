@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="INGMeWeb-Bold.ttf">
+            <string>INGMe-Bold</string>
+        </array>
+        <array key="INGMeWeb-Regular.ttf">
+            <string>INGMe</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="ING_Assignment_TodayWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="35" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YHN-7b-hVr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountHeaderCell" rowHeight="35" id="shG-XC-l9H" customClass="AccountHeaderCell" customModule="ING_Assignment_TodayWidget" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="35"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="shG-XC-l9H" id="CXU-Ew-UQL">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account type group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sH8-Lx-IR8">
+                                                    <rect key="frame" x="8" y="7" width="299" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="jbL-uJ-WtN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="INGMe-Bold" family="ING Me" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="sH8-Lx-IR8" secondAttribute="trailing" constant="13" id="KUb-s9-92N"/>
+                                                <constraint firstItem="sH8-Lx-IR8" firstAttribute="top" secondItem="CXU-Ew-UQL" secondAttribute="top" constant="7" id="nlX-of-sAP"/>
+                                                <constraint firstItem="sH8-Lx-IR8" firstAttribute="leading" secondItem="CXU-Ew-UQL" secondAttribute="leading" constant="8" id="vbZ-tI-ONc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="txtAccountGroupType" destination="sH8-Lx-IR8" id="MUu-Jy-Q9c"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountCell" rowHeight="58" id="RgX-ID-qjZ" customClass="AccountCell" customModule="ING_Assignment_TodayWidget" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="63" width="320" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RgX-ID-qjZ" id="8bD-Z1-hKh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAC-v6-hg2">
+                                                    <rect key="frame" x="8" y="8" width="185" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="mIJ-12-xt0"/>
+                                                        <constraint firstAttribute="width" constant="185" id="msJ-bJ-s1f"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="14"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iban" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gl-C9-Hlm">
+                                                    <rect key="frame" x="8" y="28" width="185" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Cgk-lB-R88"/>
+                                                        <constraint firstAttribute="width" constant="185" id="smY-uX-PCT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="INGMe" family="ING Me" pointSize="12"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xru-8F-aEI">
+                                                    <rect key="frame" x="223" y="18" width="68" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="fOf-g6-8Lj"/>
+                                                        <constraint firstAttribute="width" constant="68" id="voc-0N-W6p"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWD-P1-sQl">
+                                                    <rect key="frame" x="293" y="16" width="21" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="B8P-cp-ufW"/>
+                                                        <constraint firstAttribute="width" constant="21" id="BgT-AN-DR2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6gl-C9-Hlm" firstAttribute="leading" secondItem="8bD-Z1-hKh" secondAttribute="leadingMargin" id="5sT-x5-SKB"/>
+                                                <constraint firstItem="xru-8F-aEI" firstAttribute="top" secondItem="8bD-Z1-hKh" secondAttribute="topMargin" constant="10" id="Uzl-p7-8Tk"/>
+                                                <constraint firstItem="KAC-v6-hg2" firstAttribute="top" secondItem="8bD-Z1-hKh" secondAttribute="topMargin" id="Zvb-T8-3NK"/>
+                                                <constraint firstItem="YWD-P1-sQl" firstAttribute="top" secondItem="8bD-Z1-hKh" secondAttribute="top" constant="16" id="eiV-uI-M0J"/>
+                                                <constraint firstItem="6gl-C9-Hlm" firstAttribute="top" secondItem="8bD-Z1-hKh" secondAttribute="topMargin" constant="20" id="fVg-TH-8XJ"/>
+                                                <constraint firstItem="YWD-P1-sQl" firstAttribute="leading" secondItem="xru-8F-aEI" secondAttribute="trailing" constant="2" id="rFa-in-xFX"/>
+                                                <constraint firstItem="KAC-v6-hg2" firstAttribute="leading" secondItem="8bD-Z1-hKh" secondAttribute="leadingMargin" id="wyD-cg-9OQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="YWD-P1-sQl" secondAttribute="trailing" constant="6" id="x6M-ec-yw5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="txtAccountIban" destination="6gl-C9-Hlm" id="SEE-nH-NtD"/>
+                                            <outlet property="txtAccountName" destination="KAC-v6-hg2" id="VEu-wC-3JZ"/>
+                                            <outlet property="txtAmount" destination="xru-8F-aEI" id="VTP-Gw-Isa"/>
+                                            <outlet property="txtAmountCents" destination="YWD-P1-sQl" id="0rp-C9-NYB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="M4Y-Lb-cyx" id="9z1-nJ-IRc"/>
+                                    <outlet property="delegate" destination="M4Y-Lb-cyx" id="Njd-jD-32V"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YHN-7b-hVr" secondAttribute="trailing" id="0CB-9M-M0r"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="YHN-7b-hVr" secondAttribute="bottom" id="Dyo-qr-bvX"/>
+                            <constraint firstItem="YHN-7b-hVr" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="rup-bF-e6R"/>
+                            <constraint firstItem="YHN-7b-hVr" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="ukc-eJ-szj"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="119"/>
+                    <connections>
+                        <outlet property="lvAccounts" destination="YHN-7b-hVr" id="9NJ-hB-lnO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>

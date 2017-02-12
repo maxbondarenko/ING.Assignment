@@ -49,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ING.Assignment.TodayWidget.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ING.Assignment.Watch Extension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -138,6 +143,11 @@
 			<true/>
 		</dict>
 		<key>8548F4B09748A6C91A3CE9D464A6542A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>87296A7A62978D1F01ECDA39293EA01F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

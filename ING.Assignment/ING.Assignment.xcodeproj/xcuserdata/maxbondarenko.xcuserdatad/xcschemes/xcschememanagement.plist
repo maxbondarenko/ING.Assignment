@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ING.Assignment.TodayWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
 		<key>ING.Assignment.Watch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>3</integer>
 		</dict>
 		<key>ING.Assignment.xcscheme</key>
 		<dict>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>AAD581F91E4FD2620072669C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AAD7BDF31E5072C20069E6FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

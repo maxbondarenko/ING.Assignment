@@ -1,23 +1,34 @@
 xcodeproj 'ING.Assignment.xcodeproj'
 
-use_frameworks!
+    use_frameworks!
+
 
 target 'ING.Assignment' do
 
-pod 'OHHTTPStubs'
+
+
 pod 'XKPhotoScrollView'
 pod 'Sheriff', :git => 'https://github.com/gemr/Sheriff.git'
-pod 'Alamofire'
 pod 'AlamofireImage', '~> 3.1'
-pod 'PromiseKit'
 pod 'Fontello-Swift/Entypo'
 pod 'Fontello-Swift/ModernPictograms'
 
+target 'ING.Assignment.TodayWidget' do
+    inherit! :search_paths
+    pod 'Alamofire'
+    pod 'PromiseKit'
+    pod 'OHHTTPStubs'
+end
 
 end
 
+
+
+
 target 'ING.Assignment.Watch Extension' do
     platform :watchos, ‘2.0’
+
+use_frameworks!
 
 pod 'Alamofire'
 pod 'AlamofireImage', '~> 3.1'
@@ -25,3 +36,5 @@ pod 'PromiseKit'
 pod 'OHHTTPStubs'  
     
 end
+
+

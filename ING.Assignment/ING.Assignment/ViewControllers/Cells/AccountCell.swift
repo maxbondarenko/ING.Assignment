@@ -14,14 +14,14 @@ class AccountCell: UITableViewCell {
     var account: AccountDTO?
     var editMode = false
     
-    @IBOutlet weak var viewContainer: UIView!
+    @IBOutlet weak var viewContainer: UIView?
     @IBOutlet weak var txtAccountName: UILabel!
     
     @IBOutlet weak var txtAccountIban: UILabel!
     
     @IBOutlet weak var txtAmountCents: UILabel!
     
-    @IBOutlet weak var btnToggleHidden: UIButton!
+    @IBOutlet weak var btnToggleHidden: UIButton?
     
     @IBOutlet weak var txtAmount: UILabel!
     
@@ -37,15 +37,15 @@ class AccountCell: UITableViewCell {
     }
     func refreshButtonToggleHidden(animated: Bool){
        
-        btnToggleHidden.setTitle("", for: .normal)
+        btnToggleHidden?.setTitle("", for: .normal)
         if(self.account?.isVisible == true){
-            btnToggleHidden.removeOverlays()
+            btnToggleHidden?.removeOverlays()
             
-            btnToggleHidden.addIconOverlayInTheCenter(icon: Entypo.Check, color: .white, bgColor: .ingOrange(), borderColor: .ingOrange(), animated: animated)
+            btnToggleHidden?.addIconOverlayInTheCenter(icon: Entypo.Check, color: .white, bgColor: .ingOrange(), borderColor: .ingOrange(), animated: animated)
         }
         else{
-            btnToggleHidden.removeOverlays()
-            btnToggleHidden.addIconOverlayInTheCenter(icon: Entypo.Check, color: .white, bgColor: .white, borderColor: .ingOrange(), animated: animated)
+            btnToggleHidden?.removeOverlays()
+            btnToggleHidden?.addIconOverlayInTheCenter(icon: Entypo.Check, color: .white, bgColor: .white, borderColor: .ingOrange(), animated: animated)
         }
     }
     func toggleCheck(){
@@ -58,7 +58,7 @@ class AccountCell: UITableViewCell {
         
         
         refreshButtonToggleHidden(animated: false)
-        self.btnToggleHidden.addTarget(self, action: #selector(toggleCheck), for: UIControlEvents.touchUpInside)
+        self.btnToggleHidden?.addTarget(self, action: #selector(toggleCheck), for: UIControlEvents.touchUpInside)
         
         UIView.animate(withDuration: 0.3,
                        delay: 0,
@@ -67,16 +67,16 @@ class AccountCell: UITableViewCell {
                         if(editMode){
                             self.txtAmount.alpha = 0.0
                             self.txtAmountCents.alpha = 0.0
-                            self.btnToggleHidden.alpha = 1.0
+                            self.btnToggleHidden?.alpha = 1.0
                             
-                            self.viewContainer.transform = CGAffineTransform(translationX: self.btnToggleHidden.frame.width + 10.0, y: 0.0)
+                            self.viewContainer?.transform = CGAffineTransform(translationX: (self.btnToggleHidden?.frame.width ?? 0.0) + 10.0, y: 0.0)
                         }
                         else{
                             self.txtAmount.alpha = 1.0
                             self.txtAmountCents.alpha = 1.0
-                            self.btnToggleHidden.alpha = 0.0
+                            self.btnToggleHidden?.alpha = 0.0
                             
-                            self.viewContainer.transform = CGAffineTransform(translationX: 0.0, y: 0.0)
+                            self.viewContainer?.transform = CGAffineTransform(translationX: 0.0, y: 0.0)
                         }
                         
         },

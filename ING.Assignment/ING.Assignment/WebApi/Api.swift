@@ -9,7 +9,7 @@
 import UIKit
 import PromiseKit
 import Alamofire
-import AlamofireImage
+
 
 class Api {
  

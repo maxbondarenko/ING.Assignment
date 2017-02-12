@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0579B70A391FEB5D17A881 /* Pods_ING_Assignment_TodayWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284BFDE370095339AD8C342A /* Pods_ING_Assignment_TodayWidget.framework */; };
 		7F9D5CD1994FF8498391B29E /* Pods_ING_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D63955697E338C72B043FB /* Pods_ING_Assignment.framework */; };
 		AA0C49321E4E403500D6E89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C49311E4E403500D6E89B /* AppDelegate.swift */; };
 		AA0C49371E4E403500D6E89B /* Accounts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0C49351E4E403500D6E89B /* Accounts.storyboard */; };
@@ -14,6 +15,18 @@
 		AA0C493C1E4E403500D6E89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0C493A1E4E403500D6E89B /* LaunchScreen.storyboard */; };
 		AA0C49471E4E403500D6E89B /* ING_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C49461E4E403500D6E89B /* ING_AssignmentTests.swift */; };
 		AA0C49521E4E403500D6E89B /* ING_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C49511E4E403500D6E89B /* ING_AssignmentUITests.swift */; };
+		AA924EC81E508B7C0081E2D6 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581E71E4E84350072669C /* AccountCell.swift */; };
+		AA924EC91E508B7F0081E2D6 /* AccountHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581F61E4F9BD90072669C /* AccountHeaderCell.swift */; };
+		AA924ECA1E508CFE0081E2D6 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D901E4E5C26004D4EE5 /* NSAttributedString.swift */; };
+		AA924ECB1E508CFE0081E2D6 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D911E4E5C26004D4EE5 /* NSDate.swift */; };
+		AA924ECC1E508CFE0081E2D6 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D921E4E5C26004D4EE5 /* String.swift */; };
+		AA924ECD1E508CFE0081E2D6 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D931E4E5C26004D4EE5 /* UIButton.swift */; };
+		AA924ECE1E508CFE0081E2D6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D941E4E5C26004D4EE5 /* UIColor.swift */; };
+		AA924ECF1E508CFE0081E2D6 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D961E4E5C26004D4EE5 /* UIImage.swift */; };
+		AA924ED01E508CFE0081E2D6 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D971E4E5C26004D4EE5 /* UIImageView.swift */; };
+		AA924ED11E508CFE0081E2D6 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D991E4E5C26004D4EE5 /* UITableView.swift */; };
+		AA924ED21E508CFE0081E2D6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D9A1E4E5C26004D4EE5 /* UIView.swift */; };
+		AA924ED41E508CFE0081E2D6 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581EE1E4E882D0072669C /* UIFont.swift */; };
 		AAB09D761E4E5338004D4EE5 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D751E4E5338004D4EE5 /* AccountsVC.swift */; };
 		AAB09D781E4E5468004D4EE5 /* ApiStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D771E4E5468004D4EE5 /* ApiStub.swift */; };
 		AAB09D801E4E5475004D4EE5 /* AccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */; };
@@ -59,6 +72,25 @@
 		AAD582301E4FD9E40072669C /* GetAccountsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = AAB09D8D1E4E566E004D4EE5 /* GetAccountsSuccess.json */; };
 		AAD582311E4FD9E50072669C /* GetAccountsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = AAB09D8D1E4E566E004D4EE5 /* GetAccountsSuccess.json */; };
 		AAD5823D1E4FF0380072669C /* AccountRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD582211E4FD6F30072669C /* AccountRowController.swift */; };
+		AAD7BDEC1E506F710069E6FE /* INGMeWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F01E4E8A860072669C /* INGMeWeb-Bold.ttf */; };
+		AAD7BDED1E506F740069E6FE /* INGMeWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F11E4E8A860072669C /* INGMeWeb-Regular.ttf */; };
+		AAD7BDEE1E506F750069E6FE /* INGMeWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F11E4E8A860072669C /* INGMeWeb-Regular.ttf */; };
+		AAD7BDEF1E506F790069E6FE /* INGMeWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F01E4E8A860072669C /* INGMeWeb-Bold.ttf */; };
+		AAD7BDF61E5072C20069E6FE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD7BDF51E5072C20069E6FE /* NotificationCenter.framework */; };
+		AAD7BDF91E5072C20069E6FE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7BDF81E5072C20069E6FE /* TodayViewController.swift */; };
+		AAD7BDFC1E5072C20069E6FE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD7BDFA1E5072C20069E6FE /* MainInterface.storyboard */; };
+		AAD7BE001E5072C20069E6FE /* ING.Assignment.TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AAD7BDF41E5072C20069E6FE /* ING.Assignment.TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AAD7BE051E5073880069E6FE /* INGMeWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F01E4E8A860072669C /* INGMeWeb-Bold.ttf */; };
+		AAD7BE061E50738B0069E6FE /* INGMeWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F11E4E8A860072669C /* INGMeWeb-Regular.ttf */; };
+		AAD7BE071E5074DE0069E6FE /* GetAccountsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = AAB09D8D1E4E566E004D4EE5 /* GetAccountsSuccess.json */; };
+		AAD7BE081E5074E00069E6FE /* ApiStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D771E4E5468004D4EE5 /* ApiStub.swift */; };
+		AAD7BE091E5074E30069E6FE /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D871E4E5600004D4EE5 /* Api.swift */; };
+		AAD7BE0A1E5074EB0069E6FE /* ReturnCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7C1E4E5475004D4EE5 /* ReturnCode.swift */; };
+		AAD7BE0B1E5074EB0069E6FE /* AccountCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7D1E4E5475004D4EE5 /* AccountCurrency.swift */; };
+		AAD7BE0C1E5074EB0069E6FE /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7E1E4E5475004D4EE5 /* AccountType.swift */; };
+		AAD7BE0D1E5074EB0069E6FE /* AccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */; };
+		AAD7BE0E1E5074EB0069E6FE /* AccountSetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */; };
+		AAD7BE0F1E5074F50069E6FE /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D891E4E5600004D4EE5 /* UrlBuilder.swift */; };
 		DE2390419D3354CE85E450BC /* Pods_ING_Assignment_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB428FDAAB00ABA0C6C06144 /* Pods_ING_Assignment_Watch_Extension.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +123,13 @@
 			remoteGlobalIDString = AAD581F91E4FD2620072669C;
 			remoteInfo = ING.Assignment.Watch;
 		};
+		AAD7BDFE1E5072C20069E6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0C49261E4E403500D6E89B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD7BDF31E5072C20069E6FE;
+			remoteInfo = ING.Assignment.TodayWidget;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,14 +155,27 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAD7BE041E5072C20069E6FE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AAD7BE001E5072C20069E6FE /* ING.Assignment.TodayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AFA208C337AC80648B4F5AB /* Pods-ING.Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ING.Assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ING.Assignment/Pods-ING.Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		284BFDE370095339AD8C342A /* Pods_ING_Assignment_TodayWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ING_Assignment_TodayWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		429B9CA94CF6EDBDABF25046 /* Pods-ING.Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ING.Assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ING.Assignment/Pods-ING.Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		44E53581607F3E56C9CA77BE /* Pods-ING.Assignment.Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ING.Assignment.Watch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ING.Assignment.Watch Extension/Pods-ING.Assignment.Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		72D63955697E338C72B043FB /* Pods_ING_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ING_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD09FBC429B787E5F37A096 /* Pods-ING.Assignment.Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ING.Assignment.Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ING.Assignment.Watch Extension/Pods-ING.Assignment.Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		904E2DC82544F5A5255089BA /* Pods-ING.Assignment.TodayWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ING.Assignment.TodayWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-ING.Assignment.TodayWidget/Pods-ING.Assignment.TodayWidget.release.xcconfig"; sourceTree = "<group>"; };
 		AA0C492E1E4E403500D6E89B /* ING.Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ING.Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0C49311E4E403500D6E89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA0C49361E4E403500D6E89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Accounts.storyboard; sourceTree = "<group>"; };
@@ -174,7 +226,13 @@
 		AAD582131E4FD2620072669C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAD582151E4FD2620072669C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAD582211E4FD6F30072669C /* AccountRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountRowController.swift; path = ../ING.Assignment.Watch/AccountRowController.swift; sourceTree = "<group>"; };
+		AAD7BDF41E5072C20069E6FE /* ING.Assignment.TodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ING.Assignment.TodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD7BDF51E5072C20069E6FE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		AAD7BDF81E5072C20069E6FE /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		AAD7BDFB1E5072C20069E6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AAD7BDFD1E5072C20069E6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB428FDAAB00ABA0C6C06144 /* Pods_ING_Assignment_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ING_Assignment_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B0584EC6A5287CEE07A487 /* Pods-ING.Assignment.TodayWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ING.Assignment.TodayWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ING.Assignment.TodayWidget/Pods-ING.Assignment.TodayWidget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +266,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAD7BDF11E5072C20069E6FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD7BDF61E5072C20069E6FE /* NotificationCenter.framework in Frameworks */,
+				2E0579B70A391FEB5D17A881 /* Pods_ING_Assignment_TodayWidget.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D172DB13B702DB09831294FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +290,8 @@
 			children = (
 				72D63955697E338C72B043FB /* Pods_ING_Assignment.framework */,
 				AB428FDAAB00ABA0C6C06144 /* Pods_ING_Assignment_Watch_Extension.framework */,
+				AAD7BDF51E5072C20069E6FE /* NotificationCenter.framework */,
+				284BFDE370095339AD8C342A /* Pods_ING_Assignment_TodayWidget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,6 +306,7 @@
 				AA0C49501E4E403500D6E89B /* ING.AssignmentUITests */,
 				AAD581FB1E4FD2620072669C /* ING.Assignment.Watch */,
 				AAD5820A1E4FD2620072669C /* ING.Assignment.Watch Extension */,
+				AAD7BDF71E5072C20069E6FE /* ING.Assignment.TodayWidget */,
 				AA0C492F1E4E403500D6E89B /* Products */,
 				AA4B169AC52828754B2A3F3D /* Pods */,
 				2CC150065970492A893772B2 /* Frameworks */,
@@ -251,6 +321,7 @@
 				AA0C494D1E4E403500D6E89B /* ING.AssignmentUITests.xctest */,
 				AAD581FA1E4FD2620072669C /* ING.Assignment.Watch.app */,
 				AAD582061E4FD2620072669C /* ING.Assignment.Watch Extension.appex */,
+				AAD7BDF41E5072C20069E6FE /* ING.Assignment.TodayWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -297,6 +368,8 @@
 				1AFA208C337AC80648B4F5AB /* Pods-ING.Assignment.release.xcconfig */,
 				44E53581607F3E56C9CA77BE /* Pods-ING.Assignment.Watch Extension.debug.xcconfig */,
 				7FD09FBC429B787E5F37A096 /* Pods-ING.Assignment.Watch Extension.release.xcconfig */,
+				C6B0584EC6A5287CEE07A487 /* Pods-ING.Assignment.TodayWidget.debug.xcconfig */,
+				904E2DC82544F5A5255089BA /* Pods-ING.Assignment.TodayWidget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -417,6 +490,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AAD7BDF71E5072C20069E6FE /* ING.Assignment.TodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				AAD7BDF81E5072C20069E6FE /* TodayViewController.swift */,
+				AAD7BDFA1E5072C20069E6FE /* MainInterface.storyboard */,
+				AAD7BDFD1E5072C20069E6FE /* Info.plist */,
+			);
+			path = ING.Assignment.TodayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,11 +514,13 @@
 				162D68A99970EE0B307D8251 /* [CP] Embed Pods Frameworks */,
 				58FDD54F5D3100C374118323 /* [CP] Copy Pods Resources */,
 				AAD582201E4FD2620072669C /* Embed Watch Content */,
+				AAD7BE041E5072C20069E6FE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				AAD582171E4FD2620072669C /* PBXTargetDependency */,
+				AAD7BDFF1E5072C20069E6FE /* PBXTargetDependency */,
 			);
 			name = ING.Assignment;
 			productName = ING.Assignment;
@@ -516,6 +601,25 @@
 			productReference = AAD582061E4FD2620072669C /* ING.Assignment.Watch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		AAD7BDF31E5072C20069E6FE /* ING.Assignment.TodayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD7BE011E5072C20069E6FE /* Build configuration list for PBXNativeTarget "ING.Assignment.TodayWidget" */;
+			buildPhases = (
+				25122EDD3089B83806EC2B6A /* [CP] Check Pods Manifest.lock */,
+				AAD7BDF01E5072C20069E6FE /* Sources */,
+				AAD7BDF11E5072C20069E6FE /* Frameworks */,
+				AAD7BDF21E5072C20069E6FE /* Resources */,
+				318063191C9ECAEB9663146A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ING.Assignment.TodayWidget;
+			productName = ING.Assignment.TodayWidget;
+			productReference = AAD7BDF41E5072C20069E6FE /* ING.Assignment.TodayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -553,6 +657,11 @@
 						DevelopmentTeam = A8QG7A34NG;
 						ProvisioningStyle = Automatic;
 					};
+					AAD7BDF31E5072C20069E6FE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = A8QG7A34NG;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = AA0C49291E4E403500D6E89B /* Build configuration list for PBXProject "ING.Assignment" */;
@@ -573,6 +682,7 @@
 				AA0C494C1E4E403500D6E89B /* ING.AssignmentUITests */,
 				AAD581F91E4FD2620072669C /* ING.Assignment.Watch */,
 				AAD582051E4FD2620072669C /* ING.Assignment.Watch Extension */,
+				AAD7BDF31E5072C20069E6FE /* ING.Assignment.TodayWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -612,6 +722,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD582001E4FD2620072669C /* Assets.xcassets in Resources */,
+				AAD7BDEF1E506F790069E6FE /* INGMeWeb-Bold.ttf in Resources */,
+				AAD7BDEE1E506F750069E6FE /* INGMeWeb-Regular.ttf in Resources */,
 				AAD581FE1E4FD2620072669C /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,7 +733,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD582301E4FD9E40072669C /* GetAccountsSuccess.json in Resources */,
+				AAD7BDED1E506F740069E6FE /* INGMeWeb-Regular.ttf in Resources */,
+				AAD7BDEC1E506F710069E6FE /* INGMeWeb-Bold.ttf in Resources */,
 				AAD582141E4FD2620072669C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD7BDF21E5072C20069E6FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD7BE071E5074DE0069E6FE /* GetAccountsSuccess.json in Resources */,
+				AAD7BDFC1E5072C20069E6FE /* MainInterface.storyboard in Resources */,
+				AAD7BE061E50738B0069E6FE /* INGMeWeb-Regular.ttf in Resources */,
+				AAD7BE051E5073880069E6FE /* INGMeWeb-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +768,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ING.Assignment/Pods-ING.Assignment-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		25122EDD3089B83806EC2B6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		2993ADC16DF4CA9C53008F55 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -656,6 +796,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		318063191C9ECAEB9663146A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ING.Assignment.TodayWidget/Pods-ING.Assignment.TodayWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		58FDD54F5D3100C374118323 /* [CP] Copy Pods Resources */ = {
@@ -786,6 +941,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAD7BDF01E5072C20069E6FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA924ED21E508CFE0081E2D6 /* UIView.swift in Sources */,
+				AAD7BE0F1E5074F50069E6FE /* UrlBuilder.swift in Sources */,
+				AA924EC81E508B7C0081E2D6 /* AccountCell.swift in Sources */,
+				AAD7BE091E5074E30069E6FE /* Api.swift in Sources */,
+				AAD7BE0D1E5074EB0069E6FE /* AccountDTO.swift in Sources */,
+				AA924ECC1E508CFE0081E2D6 /* String.swift in Sources */,
+				AA924ED41E508CFE0081E2D6 /* UIFont.swift in Sources */,
+				AA924ECE1E508CFE0081E2D6 /* UIColor.swift in Sources */,
+				AA924ECF1E508CFE0081E2D6 /* UIImage.swift in Sources */,
+				AA924ECD1E508CFE0081E2D6 /* UIButton.swift in Sources */,
+				AAD7BE0C1E5074EB0069E6FE /* AccountType.swift in Sources */,
+				AAD7BE0B1E5074EB0069E6FE /* AccountCurrency.swift in Sources */,
+				AA924ED11E508CFE0081E2D6 /* UITableView.swift in Sources */,
+				AA924ED01E508CFE0081E2D6 /* UIImageView.swift in Sources */,
+				AAD7BE081E5074E00069E6FE /* ApiStub.swift in Sources */,
+				AA924ECA1E508CFE0081E2D6 /* NSAttributedString.swift in Sources */,
+				AAD7BE0A1E5074EB0069E6FE /* ReturnCode.swift in Sources */,
+				AAD7BE0E1E5074EB0069E6FE /* AccountSetDTO.swift in Sources */,
+				AA924ECB1E508CFE0081E2D6 /* NSDate.swift in Sources */,
+				AAD7BDF91E5072C20069E6FE /* TodayViewController.swift in Sources */,
+				AA924EC91E508B7F0081E2D6 /* AccountHeaderCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -808,6 +991,11 @@
 			isa = PBXTargetDependency;
 			target = AAD581F91E4FD2620072669C /* ING.Assignment.Watch */;
 			targetProxy = AAD582161E4FD2620072669C /* PBXContainerItemProxy */;
+		};
+		AAD7BDFF1E5072C20069E6FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD7BDF31E5072C20069E6FE /* ING.Assignment.TodayWidget */;
+			targetProxy = AAD7BDFE1E5072C20069E6FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -834,6 +1022,14 @@
 				AAD581FD1E4FD2620072669C /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		AAD7BDFA1E5072C20069E6FE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD7BDFB1E5072C20069E6FE /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -936,10 +1132,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 429B9CA94CF6EDBDABF25046 /* Pods-ING.Assignment.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A8QG7A34NG;
 				INFOPLIST_FILE = ING.Assignment/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ING-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -952,10 +1149,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1AFA208C337AC80648B4F5AB /* Pods-ING.Assignment.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A8QG7A34NG;
 				INFOPLIST_FILE = ING.Assignment/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ING-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1094,6 +1292,36 @@
 			};
 			name = Release;
 		};
+		AAD7BE021E5072C20069E6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B0584EC6A5287CEE07A487 /* Pods-ING.Assignment.TodayWidget.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = A8QG7A34NG;
+				INFOPLIST_FILE = ING.Assignment.TodayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ING-Assignment.TodayWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AAD7BE031E5072C20069E6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 904E2DC82544F5A5255089BA /* Pods-ING.Assignment.TodayWidget.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = A8QG7A34NG;
+				INFOPLIST_FILE = ING.Assignment.TodayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ING-Assignment.TodayWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1147,6 +1375,15 @@
 			buildConfigurations = (
 				AAD5821E1E4FD2620072669C /* Debug */,
 				AAD5821F1E4FD2620072669C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD7BE011E5072C20069E6FE /* Build configuration list for PBXNativeTarget "ING.Assignment.TodayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD7BE021E5072C20069E6FE /* Debug */,
+				AAD7BE031E5072C20069E6FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

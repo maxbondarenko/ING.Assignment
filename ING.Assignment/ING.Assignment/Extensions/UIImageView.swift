@@ -11,54 +11,7 @@ import Alamofire
 import Fontello_Swift
 
 extension UIImageView {
-    func downloadImage(url : String) -> Void{
-        
-        let cachedImage = ImageCache.sharedInstance.getImage(urlString: url)
-        if(cachedImage != nil){
-            self.image = cachedImage
-            return
-        }
-        
-        Alamofire.request(url).responseImage { (response) in
-            if(response.result.isSuccess)
-            {
-                ImageCache.sharedInstance.setImage(image: response.result.value!, urlString: url)
-                self.image = response.result.value!
-                self.alpha = 0
-                self.fadeIn()
-            }
-            else{
-                self.image = nil
-                //toImageView.backgroundColor = UIColor.extraLightGray2()
-            }
-            
-        }
-    }
-    
-    func downloadImage(url : String, iconOnFail: Entypo) -> Void{
-        
-        let cachedImage = ImageCache.sharedInstance.getImage(urlString: url)
-        if(cachedImage != nil){
-            self.image = cachedImage
-            return
-        }
-        
-        Alamofire.request(url).responseImage { (response) in
-            
-            if(response.result.isSuccess)
-            {
-                self.makeBorder(color: UIColor.black, borderWidth: 1.0)
-                ImageCache.sharedInstance.setImage(image: response.result.value!, urlString: url)
-                self.image = response.result.value!
-                self.alpha = 0
-                self.fadeIn()
-            }
-            else{
-                self.image = UIImage.fontEntypoImage(icon: iconOnFail, fontSize: 20, color: UIColor.lightGray)
-            }
-            
-        }
-    }
+   
 }
 
 
