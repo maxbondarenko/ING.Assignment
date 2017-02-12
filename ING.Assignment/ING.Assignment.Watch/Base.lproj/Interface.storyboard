@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="INGMeWeb-Regular.ttf">
+            <string>INGMe</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Accounts-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InterfaceController" title="Accounts" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ING_Assignment_Watch_Extension">
+                    <items>
+                        <table alignment="left" id="iDz-VP-GAb">
+                            <items>
+                                <tableRow identifier="AccountRowController" id="vhl-8V-Z97" customClass="AccountRowController" customModule="ING_Assignment_Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="sNi-L8-qiq">
+                                        <items>
+                                            <label alignment="left" text="AccountName" id="gFX-b3-ki9">
+                                                <fontDescription key="font" name="INGMe" family="ING Me" pointSize="12"/>
+                                            </label>
+                                            <label alignment="left" text="IBAN" id="PbD-BO-aj3">
+                                                <fontDescription key="font" name="INGMe" family="ING Me" pointSize="10"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="LAt-Cb-mf5">
+                                                <items>
+                                                    <label alignment="left" text="$ 999," id="7nM-5h-Hzl">
+                                                        <fontDescription key="font" name="INGMe" family="ING Me" pointSize="14"/>
+                                                    </label>
+                                                    <label alignment="left" text="00" id="Z3N-iV-sH8">
+                                                        <fontDescription key="font" name="INGMe" family="ING Me" pointSize="10"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="txtAccountName" destination="gFX-b3-ki9" id="As6-OU-ODb"/>
+                                        <outlet property="txtAmount" destination="7nM-5h-Hzl" id="3aJ-Mt-2A7"/>
+                                        <outlet property="txtAmountCents" destination="Z3N-iV-sH8" id="hZo-WK-GSw"/>
+                                        <outlet property="txtIban" destination="PbD-BO-aj3" id="UrH-qc-Z6h"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableAccounts" destination="iDz-VP-GAb" id="jBf-Be-QDW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+    </scenes>
+</document>

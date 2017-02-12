@@ -40,6 +40,26 @@
 		AAD581F21E4E8A860072669C /* INGMeWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F01E4E8A860072669C /* INGMeWeb-Bold.ttf */; };
 		AAD581F31E4E8A860072669C /* INGMeWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD581F11E4E8A860072669C /* INGMeWeb-Regular.ttf */; };
 		AAD581F71E4F9BD90072669C /* AccountHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581F61E4F9BD90072669C /* AccountHeaderCell.swift */; };
+		AAD581FE1E4FD2620072669C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD581FC1E4FD2620072669C /* Interface.storyboard */; };
+		AAD582001E4FD2620072669C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD581FF1E4FD2620072669C /* Assets.xcassets */; };
+		AAD582071E4FD2620072669C /* ING.Assignment.Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AAD582061E4FD2620072669C /* ING.Assignment.Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AAD5820E1E4FD2620072669C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD5820D1E4FD2620072669C /* InterfaceController.swift */; };
+		AAD582101E4FD2620072669C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD5820F1E4FD2620072669C /* ExtensionDelegate.swift */; };
+		AAD582121E4FD2620072669C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD582111E4FD2620072669C /* NotificationController.swift */; };
+		AAD582141E4FD2620072669C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD582131E4FD2620072669C /* Assets.xcassets */; };
+		AAD582181E4FD2620072669C /* ING.Assignment.Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AAD581FA1E4FD2620072669C /* ING.Assignment.Watch.app */; };
+		AAD582261E4FD9A10072669C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D871E4E5600004D4EE5 /* Api.swift */; };
+		AAD582271E4FD9AA0072669C /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D891E4E5600004D4EE5 /* UrlBuilder.swift */; };
+		AAD5822A1E4FD9D60072669C /* AccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */; };
+		AAD5822B1E4FD9D60072669C /* AccountSetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */; };
+		AAD5822C1E4FD9DD0072669C /* ReturnCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7C1E4E5475004D4EE5 /* ReturnCode.swift */; };
+		AAD5822D1E4FD9DD0072669C /* AccountCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7D1E4E5475004D4EE5 /* AccountCurrency.swift */; };
+		AAD5822E1E4FD9DD0072669C /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7E1E4E5475004D4EE5 /* AccountType.swift */; };
+		AAD5822F1E4FD9E10072669C /* ApiStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D771E4E5468004D4EE5 /* ApiStub.swift */; };
+		AAD582301E4FD9E40072669C /* GetAccountsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = AAB09D8D1E4E566E004D4EE5 /* GetAccountsSuccess.json */; };
+		AAD582311E4FD9E50072669C /* GetAccountsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = AAB09D8D1E4E566E004D4EE5 /* GetAccountsSuccess.json */; };
+		AAD5823D1E4FF0380072669C /* AccountRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD582211E4FD6F30072669C /* AccountRowController.swift */; };
+		DE2390419D3354CE85E450BC /* Pods_ING_Assignment_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB428FDAAB00ABA0C6C06144 /* Pods_ING_Assignment_Watch_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +77,53 @@
 			remoteGlobalIDString = AA0C492D1E4E403500D6E89B;
 			remoteInfo = ING.Assignment;
 		};
+		AAD582081E4FD2620072669C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0C49261E4E403500D6E89B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD582051E4FD2620072669C;
+			remoteInfo = "ING.Assignment.Watch Extension";
+		};
+		AAD582161E4FD2620072669C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0C49261E4E403500D6E89B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD581F91E4FD2620072669C;
+			remoteInfo = ING.Assignment.Watch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAD5821C1E4FD2620072669C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AAD582071E4FD2620072669C /* ING.Assignment.Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD582201E4FD2620072669C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AAD582181E4FD2620072669C /* ING.Assignment.Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AFA208C337AC80648B4F5AB /* Pods-ING.Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ING.Assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ING.Assignment/Pods-ING.Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		429B9CA94CF6EDBDABF25046 /* Pods-ING.Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ING.Assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ING.Assignment/Pods-ING.Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		44E53581607F3E56C9CA77BE /* Pods-ING.Assignment.Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ING.Assignment.Watch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ING.Assignment.Watch Extension/Pods-ING.Assignment.Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		72D63955697E338C72B043FB /* Pods_ING_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ING_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD09FBC429B787E5F37A096 /* Pods-ING.Assignment.Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ING.Assignment.Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ING.Assignment.Watch Extension/Pods-ING.Assignment.Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		AA0C492E1E4E403500D6E89B /* ING.Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ING.Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0C49311E4E403500D6E89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA0C49361E4E403500D6E89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Accounts.storyboard; sourceTree = "<group>"; };
@@ -101,6 +162,19 @@
 		AAD581F01E4E8A860072669C /* INGMeWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "INGMeWeb-Bold.ttf"; path = "Assets/Fonts/INGMeWeb-Bold.ttf"; sourceTree = "<group>"; };
 		AAD581F11E4E8A860072669C /* INGMeWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "INGMeWeb-Regular.ttf"; path = "Assets/Fonts/INGMeWeb-Regular.ttf"; sourceTree = "<group>"; };
 		AAD581F61E4F9BD90072669C /* AccountHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountHeaderCell.swift; path = ViewControllers/Cells/AccountHeaderCell.swift; sourceTree = "<group>"; };
+		AAD581FA1E4FD2620072669C /* ING.Assignment.Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ING.Assignment.Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD581FD1E4FD2620072669C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AAD581FF1E4FD2620072669C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAD582011E4FD2620072669C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD582061E4FD2620072669C /* ING.Assignment.Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ING.Assignment.Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD5820C1E4FD2620072669C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AAD5820D1E4FD2620072669C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AAD5820F1E4FD2620072669C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AAD582111E4FD2620072669C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AAD582131E4FD2620072669C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAD582151E4FD2620072669C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD582211E4FD6F30072669C /* AccountRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountRowController.swift; path = ../ING.Assignment.Watch/AccountRowController.swift; sourceTree = "<group>"; };
+		AB428FDAAB00ABA0C6C06144 /* Pods_ING_Assignment_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ING_Assignment_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +200,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAD582031E4FD2620072669C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2390419D3354CE85E450BC /* Pods_ING_Assignment_Watch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D172DB13B702DB09831294FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -133,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				72D63955697E338C72B043FB /* Pods_ING_Assignment.framework */,
+				AB428FDAAB00ABA0C6C06144 /* Pods_ING_Assignment_Watch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,6 +235,8 @@
 				AA0C49301E4E403500D6E89B /* ING.Assignment */,
 				AA0C49451E4E403500D6E89B /* ING.AssignmentTests */,
 				AA0C49501E4E403500D6E89B /* ING.AssignmentUITests */,
+				AAD581FB1E4FD2620072669C /* ING.Assignment.Watch */,
+				AAD5820A1E4FD2620072669C /* ING.Assignment.Watch Extension */,
 				AA0C492F1E4E403500D6E89B /* Products */,
 				AA4B169AC52828754B2A3F3D /* Pods */,
 				2CC150065970492A893772B2 /* Frameworks */,
@@ -157,6 +249,8 @@
 				AA0C492E1E4E403500D6E89B /* ING.Assignment.app */,
 				AA0C49421E4E403500D6E89B /* ING.AssignmentTests.xctest */,
 				AA0C494D1E4E403500D6E89B /* ING.AssignmentUITests.xctest */,
+				AAD581FA1E4FD2620072669C /* ING.Assignment.Watch.app */,
+				AAD582061E4FD2620072669C /* ING.Assignment.Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +295,8 @@
 			children = (
 				429B9CA94CF6EDBDABF25046 /* Pods-ING.Assignment.debug.xcconfig */,
 				1AFA208C337AC80648B4F5AB /* Pods-ING.Assignment.release.xcconfig */,
+				44E53581607F3E56C9CA77BE /* Pods-ING.Assignment.Watch Extension.debug.xcconfig */,
+				7FD09FBC429B787E5F37A096 /* Pods-ING.Assignment.Watch Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -289,6 +385,38 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		AAD581FB1E4FD2620072669C /* ING.Assignment.Watch */ = {
+			isa = PBXGroup;
+			children = (
+				AAD581FC1E4FD2620072669C /* Interface.storyboard */,
+				AAD581FF1E4FD2620072669C /* Assets.xcassets */,
+				AAD582011E4FD2620072669C /* Info.plist */,
+			);
+			path = ING.Assignment.Watch;
+			sourceTree = "<group>";
+		};
+		AAD5820A1E4FD2620072669C /* ING.Assignment.Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AAD582211E4FD6F30072669C /* AccountRowController.swift */,
+				AAD5820D1E4FD2620072669C /* InterfaceController.swift */,
+				AAD5820F1E4FD2620072669C /* ExtensionDelegate.swift */,
+				AAD582111E4FD2620072669C /* NotificationController.swift */,
+				AAD582131E4FD2620072669C /* Assets.xcassets */,
+				AAD582151E4FD2620072669C /* Info.plist */,
+				AAD5820B1E4FD2620072669C /* Supporting Files */,
+			);
+			path = "ING.Assignment.Watch Extension";
+			sourceTree = "<group>";
+		};
+		AAD5820B1E4FD2620072669C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAD5820C1E4FD2620072669C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,10 +430,12 @@
 				AA0C492C1E4E403500D6E89B /* Resources */,
 				162D68A99970EE0B307D8251 /* [CP] Embed Pods Frameworks */,
 				58FDD54F5D3100C374118323 /* [CP] Copy Pods Resources */,
+				AAD582201E4FD2620072669C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AAD582171E4FD2620072669C /* PBXTargetDependency */,
 			);
 			name = ING.Assignment;
 			productName = ING.Assignment;
@@ -348,6 +478,44 @@
 			productReference = AA0C494D1E4E403500D6E89B /* ING.AssignmentUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AAD581F91E4FD2620072669C /* ING.Assignment.Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD5821D1E4FD2620072669C /* Build configuration list for PBXNativeTarget "ING.Assignment.Watch" */;
+			buildPhases = (
+				AAD581F81E4FD2620072669C /* Resources */,
+				AAD5821C1E4FD2620072669C /* Embed App Extensions */,
+				D172DB13B702DB09831294FA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAD582091E4FD2620072669C /* PBXTargetDependency */,
+			);
+			name = ING.Assignment.Watch;
+			productName = ING.Assignment.Watch;
+			productReference = AAD581FA1E4FD2620072669C /* ING.Assignment.Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AAD582051E4FD2620072669C /* ING.Assignment.Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD582191E4FD2620072669C /* Build configuration list for PBXNativeTarget "ING.Assignment.Watch Extension" */;
+			buildPhases = (
+				9CA8EABFB562A0F2040CE349 /* [CP] Check Pods Manifest.lock */,
+				AAD582021E4FD2620072669C /* Sources */,
+				AAD582031E4FD2620072669C /* Frameworks */,
+				AAD582041E4FD2620072669C /* Resources */,
+				7A4E764392DDCDB88A973920 /* [CP] Embed Pods Frameworks */,
+				DEC141F7EFE0A3CFBFE24C4D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ING.Assignment.Watch Extension";
+			productName = "ING.Assignment.Watch Extension";
+			productReference = AAD582061E4FD2620072669C /* ING.Assignment.Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -375,6 +543,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = AA0C492D1E4E403500D6E89B;
 					};
+					AAD581F91E4FD2620072669C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = A8QG7A34NG;
+						ProvisioningStyle = Automatic;
+					};
+					AAD582051E4FD2620072669C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = A8QG7A34NG;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = AA0C49291E4E403500D6E89B /* Build configuration list for PBXProject "ING.Assignment" */;
@@ -393,6 +571,8 @@
 				AA0C492D1E4E403500D6E89B /* ING.Assignment */,
 				AA0C49411E4E403500D6E89B /* ING.AssignmentTests */,
 				AA0C494C1E4E403500D6E89B /* ING.AssignmentUITests */,
+				AAD581F91E4FD2620072669C /* ING.Assignment.Watch */,
+				AAD582051E4FD2620072669C /* ING.Assignment.Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -416,6 +596,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD582311E4FD9E50072669C /* GetAccountsSuccess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +604,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD581F81E4FD2620072669C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD582001E4FD2620072669C /* Assets.xcassets in Resources */,
+				AAD581FE1E4FD2620072669C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD582041E4FD2620072669C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD582301E4FD9E40072669C /* GetAccountsSuccess.json in Resources */,
+				AAD582141E4FD2620072669C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +673,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ING.Assignment/Pods-ING.Assignment-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7A4E764392DDCDB88A973920 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ING.Assignment.Watch Extension/Pods-ING.Assignment.Watch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA8EABFB562A0F2040CE349 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DEC141F7EFE0A3CFBFE24C4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ING.Assignment.Watch Extension/Pods-ING.Assignment.Watch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -523,6 +767,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAD582021E4FD2620072669C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD582271E4FD9AA0072669C /* UrlBuilder.swift in Sources */,
+				AAD5822A1E4FD9D60072669C /* AccountDTO.swift in Sources */,
+				AAD582121E4FD2620072669C /* NotificationController.swift in Sources */,
+				AAD582101E4FD2620072669C /* ExtensionDelegate.swift in Sources */,
+				AAD5822D1E4FD9DD0072669C /* AccountCurrency.swift in Sources */,
+				AAD582261E4FD9A10072669C /* Api.swift in Sources */,
+				AAD5822B1E4FD9D60072669C /* AccountSetDTO.swift in Sources */,
+				AAD5822F1E4FD9E10072669C /* ApiStub.swift in Sources */,
+				AAD5822C1E4FD9DD0072669C /* ReturnCode.swift in Sources */,
+				AAD5820E1E4FD2620072669C /* InterfaceController.swift in Sources */,
+				AAD5823D1E4FF0380072669C /* AccountRowController.swift in Sources */,
+				AAD5822E1E4FD9DD0072669C /* AccountType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -535,6 +798,16 @@
 			isa = PBXTargetDependency;
 			target = AA0C492D1E4E403500D6E89B /* ING.Assignment */;
 			targetProxy = AA0C494E1E4E403500D6E89B /* PBXContainerItemProxy */;
+		};
+		AAD582091E4FD2620072669C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD582051E4FD2620072669C /* ING.Assignment.Watch Extension */;
+			targetProxy = AAD582081E4FD2620072669C /* PBXContainerItemProxy */;
+		};
+		AAD582171E4FD2620072669C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD581F91E4FD2620072669C /* ING.Assignment.Watch */;
+			targetProxy = AAD582161E4FD2620072669C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -553,6 +826,14 @@
 				AA0C493B1E4E403500D6E89B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AAD581FC1E4FD2620072669C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD581FD1E4FD2620072669C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -741,6 +1022,78 @@
 			};
 			name = Release;
 		};
+		AAD5821A1E4FD2620072669C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E53581607F3E56C9CA77BE /* Pods-ING.Assignment.Watch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = A8QG7A34NG;
+				INFOPLIST_FILE = "ING.Assignment.Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ING-Assignment.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		AAD5821B1E4FD2620072669C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD09FBC429B787E5F37A096 /* Pods-ING.Assignment.Watch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = A8QG7A34NG;
+				INFOPLIST_FILE = "ING.Assignment.Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ING-Assignment.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		AAD5821E1E4FD2620072669C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A8QG7A34NG;
+				IBSC_MODULE = ING_Assignment_Watch_Extension;
+				INFOPLIST_FILE = ING.Assignment.Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ING-Assignment.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		AAD5821F1E4FD2620072669C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A8QG7A34NG;
+				IBSC_MODULE = ING_Assignment_Watch_Extension;
+				INFOPLIST_FILE = ING.Assignment.Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ING-Assignment.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -776,6 +1129,24 @@
 			buildConfigurations = (
 				AA0C495D1E4E403500D6E89B /* Debug */,
 				AA0C495E1E4E403500D6E89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD582191E4FD2620072669C /* Build configuration list for PBXNativeTarget "ING.Assignment.Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD5821A1E4FD2620072669C /* Debug */,
+				AAD5821B1E4FD2620072669C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD5821D1E4FD2620072669C /* Build configuration list for PBXNativeTarget "ING.Assignment.Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD5821E1E4FD2620072669C /* Debug */,
+				AAD5821F1E4FD2620072669C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

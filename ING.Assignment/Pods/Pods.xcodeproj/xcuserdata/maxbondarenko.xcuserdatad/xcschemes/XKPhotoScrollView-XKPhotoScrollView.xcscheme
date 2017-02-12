@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8284BDE9A38B16483E3CE69E8A93A33F'
+               BlueprintIdentifier = 'B37A2E49F68EDDE0331C9BF7ED9C0725'
                BlueprintName = 'XKPhotoScrollView-XKPhotoScrollView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'XKPhotoScrollView.bundle'>

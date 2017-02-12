@@ -25,9 +25,9 @@ class ApiStub: NSObject {
     
     func stub(filename: String){
     
-        if(ApiStub.getIsJsonStubEnabled() == false){
-            return
-        }
+        //if(ApiStub.getIsJsonStubEnabled() == false){
+          //  return
+        //}
 
         OHHTTPStubs.removeAllStubs()
         

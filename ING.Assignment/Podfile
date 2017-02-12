@@ -16,3 +16,12 @@ pod 'Fontello-Swift/ModernPictograms'
 
 end
 
+target 'ING.Assignment.Watch Extension' do
+    platform :watchos, ‘2.0’
+
+pod 'Alamofire'
+pod 'AlamofireImage', '~> 3.1'
+pod 'PromiseKit'
+pod 'OHHTTPStubs'  
+    
+end
