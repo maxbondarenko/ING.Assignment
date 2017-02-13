@@ -47,7 +47,7 @@ class AccountDTO {
     
     func getBalanceEuros()->String{
         
-        let floored = String(format: "%.0f", Double(self.balanceInCents) / 100.0)
+        let floored = String(format: "%.0f", floor(Double(self.balanceInCents) / 100.0))
         return floored
 
     }

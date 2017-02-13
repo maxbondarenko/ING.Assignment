@@ -345,22 +345,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ING.Assignment/JsonStubs/ApiStub.swift"
-            timestampString = "508554633.823859"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "stub(filename:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ING.Assignment.TodayWidget/TodayViewController.swift"
             timestampString = "508626236.807167"
             startingColumnNumber = "9223372036854775807"
@@ -513,6 +497,214 @@
             endingLineNumber = "41"
             landmarkName = "widgetActiveDisplayModeDidChange(_:withMaximumSize:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ING.AssignmentUITests/ING_AssignmentUITests.swift"
+            timestampString = "508634448.231563"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "testClickOnTheEyeButtonShouldChangeTheCaptionToDone()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ING.AssignmentTests/ING_AssignmentTests.swift"
+            timestampString = "508639012.657071"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "testMappingShouldBeCorrect()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ING_AssignmentTests.ING_AssignmentTests.(testMappingShouldBeCorrect () -&gt; ()).(closure #1)"
+                  moduleName = "ING.AssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxbondarenko/Projects/ING/FirstAssignment/ING.Assignment/ING.Assignment/ING.AssignmentTests/ING_AssignmentTests.swift"
+                  timestampString = "508704723.084024"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "9681">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ING_AssignmentTests.ING_AssignmentTests.(testMappingShouldBeCorrect () -&gt; ()).(closure #1).(implicit closure #52)"
+                  moduleName = "ING.AssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxbondarenko/Projects/ING/FirstAssignment/ING.Assignment/ING.Assignment/ING.AssignmentTests/ING_AssignmentTests.swift"
+                  timestampString = "508704723.086499"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ING.AssignmentTests/ING_AssignmentTests.swift"
+            timestampString = "508639104.257258"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "testMappingShouldBeCorrect()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ING.AssignmentTests/ING_AssignmentTests.swift"
+            timestampString = "508703552.977146"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "testEuroValueShouldBeCorrect()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ING.AssignmentTests/ING_AssignmentTests.swift"
+            timestampString = "508703667.190508"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "testMappingShouldBeCorrect()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ING.AssignmentTests/ING_AssignmentTests.swift"
+            timestampString = "508704530.073921"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "testCentValueShouldBeCorrect()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ING_AssignmentTests.ING_AssignmentTests.testCentValueShouldBeCorrect () -&gt; ()"
+                  moduleName = "ING.AssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxbondarenko/Projects/ING/FirstAssignment/ING.Assignment/ING.Assignment/ING.AssignmentTests/ING_AssignmentTests.swift"
+                  timestampString = "508704723.088942"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "173">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ING_AssignmentTests.ING_AssignmentTests.(testCentValueShouldBeCorrect () -&gt; ()).(implicit closure #2)"
+                  moduleName = "ING.AssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxbondarenko/Projects/ING/FirstAssignment/ING.Assignment/ING.Assignment/ING.AssignmentTests/ING_AssignmentTests.swift"
+                  timestampString = "508704723.091581"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ING.Assignment/DataTransferObjects/AccountDTO.swift"
+            timestampString = "508704692.155103"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getBalanceEuros()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ING_Assignment.AccountDTO.getBalanceEuros () -&gt; Swift.String"
+                  moduleName = "ING.Assignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxbondarenko/Projects/ING/FirstAssignment/ING.Assignment/ING.Assignment/ING.Assignment/DataTransferObjects/AccountDTO.swift"
+                  timestampString = "508704722.389124"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ING_AssignmentTests.AccountDTO.getBalanceEuros () -&gt; Swift.String"
+                  moduleName = "ING.AssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maxbondarenko/Projects/ING/FirstAssignment/ING.Assignment/ING.Assignment/ING.Assignment/DataTransferObjects/AccountDTO.swift"
+                  timestampString = "508704723.096122"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

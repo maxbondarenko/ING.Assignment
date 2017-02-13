@@ -13,6 +13,7 @@ pod 'AlamofireImage', '~> 3.1'
 pod 'Fontello-Swift/Entypo'
 pod 'Fontello-Swift/ModernPictograms'
 
+
 target 'ING.Assignment.TodayWidget' do
     inherit! :search_paths
     pod 'Alamofire'
@@ -20,10 +21,16 @@ target 'ING.Assignment.TodayWidget' do
     pod 'OHHTTPStubs'
 end
 
+
 end
 
 
-
+target 'ING.AssignmentTests' do
+    pod 'Alamofire'
+    pod 'AlamofireImage', '~> 3.1'
+    pod 'PromiseKit'
+    pod 'OHHTTPStubs'
+end
 
 target 'ING.Assignment.Watch Extension' do
     platform :watchos, ‘2.0’

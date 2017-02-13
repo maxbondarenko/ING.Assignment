@@ -89,22 +89,22 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/Alamofire-iOS/Alamofire.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/AlamofireImage-iOS/AlamofireImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire-iOS9.0/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AlamofireImage-iOS9.0/AlamofireImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Fontello-Swift/Fontello_Swift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Sheriff/Sheriff.framework"
   install_framework "$BUILT_PRODUCTS_DIR/XKPhotoScrollView/XKPhotoScrollView.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/OHHTTPStubs-iOS/OHHTTPStubs.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/PromiseKit-iOS/PromiseKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/OHHTTPStubs-iOS9.0/OHHTTPStubs.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PromiseKit-iOS9.0/PromiseKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/Alamofire-iOS/Alamofire.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/AlamofireImage-iOS/AlamofireImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire-iOS9.0/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AlamofireImage-iOS9.0/AlamofireImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Fontello-Swift/Fontello_Swift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Sheriff/Sheriff.framework"
   install_framework "$BUILT_PRODUCTS_DIR/XKPhotoScrollView/XKPhotoScrollView.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/OHHTTPStubs-iOS/OHHTTPStubs.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/PromiseKit-iOS/PromiseKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/OHHTTPStubs-iOS9.0/OHHTTPStubs.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PromiseKit-iOS9.0/PromiseKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

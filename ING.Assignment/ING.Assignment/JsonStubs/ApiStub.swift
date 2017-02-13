@@ -25,10 +25,6 @@ class ApiStub: NSObject {
     
     func stub(filename: String){
     
-        //if(ApiStub.getIsJsonStubEnabled() == false){
-          //  return
-        //}
-
         OHHTTPStubs.removeAllStubs()
         
         //Here we stub the Http response so the service wont have to load data from internet
