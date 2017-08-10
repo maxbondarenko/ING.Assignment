@@ -1,10 +1,4 @@
-//
-//  AccountHeaderCell.swift
-//  ING.Assignment
-//
-//  Created by Max Bondarenko on 2/11/17.
-//  Copyright © 2017 MBKO. All rights reserved.
-//
+
 
 import UIKit
 

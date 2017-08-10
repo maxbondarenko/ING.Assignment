@@ -1,18 +1,12 @@
-//
-//  AccountSetDTO.swift
-//  ING.Assignment
-//
-//  Created by Max Bondarenko on 2/10/17.
-//  Copyright © 2017 MBKO. All rights reserved.
-//
+
 
 import UIKit
 
-class AccountSetDTO: NSObject {
+class AccountSet: NSObject {
 
-    var accounts: [AccountDTO] = []
-    var paymentAccounts: [AccountDTO] = []
-    var savingAccounts: [AccountDTO] = []
+    var accounts: [Account] = []
+    var paymentAccounts: [Account] = []
+    var savingAccounts: [Account] = []
     
     var returnCode: ReturnCode?
     var failedAccountTypes: String = ""
@@ -31,7 +25,7 @@ class AccountSetDTO: NSObject {
         if(accountsDict != nil){
             for accountDict in accountsDict!
             {
-                let account : AccountDTO = AccountDTO().populate(dict: accountDict as NSDictionary)!
+                let account : Account = Account().populate(dict: accountDict as NSDictionary)!
                 self.accounts.append(account)
                 
                 if(account.type == AccountType.payment){
@@ -44,7 +38,7 @@ class AccountSetDTO: NSObject {
         }
     }
     
-    func populate(dict: NSDictionary) -> AccountSetDTO? {
+    func populate(dict: NSDictionary) -> AccountSet? {
 
         self.populateAccounts(dict:dict)
         self.connectLinkedAccounts()

@@ -1,10 +1,4 @@
-//
-//  ING_AssignmentTests.swift
-//  ING.AssignmentTests
-//
-//  Created by Max Bondarenko on 2/10/17.
-//  Copyright © 2017 MBKO. All rights reserved.
-//
+
 
 import XCTest
 @testable import ING_Assignment
@@ -28,7 +22,7 @@ class ING_AssignmentTests: XCTestCase {
         
         ApiStub().stubGetAccounts()
         Api.getAccounts()
-            .then { (accounts: AccountSetDTO) -> () in
+            .then { (accounts: AccountSet) -> () in
                 
                 ApiStub().clearStubs()
                 
@@ -112,7 +106,7 @@ class ING_AssignmentTests: XCTestCase {
     func testEuroValueShouldBeCorrect() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let acc = AccountDTO()
+        let acc = Account()
         acc.currency = .eur
         
         XCTAssert(acc.getCurrencySign() == "€")
@@ -121,7 +115,7 @@ class ING_AssignmentTests: XCTestCase {
     func testCentValueShouldBeCorrect() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let acc = AccountDTO()
+        let acc = Account()
         acc.balanceInCents = 11199
         XCTAssert(acc.getBalanceRemainderCents() == "99")
         XCTAssert(acc.getBalanceEuros() == "111")
@@ -132,11 +126,11 @@ class ING_AssignmentTests: XCTestCase {
         
         ApiStub().stubGetAccounts()
         Api.getAccounts()
-            .then { (accounts: AccountSetDTO) -> () in
+            .then { (accounts: AccountSet) -> () in
                 
                 ApiStub().clearStubs()
                 
-                let filteredAccounts = AccountDTO.filterVisibleAccounts(accounts.accounts)
+                let filteredAccounts = Account.filterVisibleAccounts(accounts.accounts)
                 
                 
                 XCTAssert(filteredAccounts.count == 2)
@@ -167,7 +161,7 @@ class ING_AssignmentTests: XCTestCase {
         
         ApiStub().stubGetAccounts()
         Api.getAccounts()
-            .then { (accounts: AccountSetDTO) -> () in
+            .then { (accounts: AccountSet) -> () in
                 
                 ApiStub().clearStubs()
                 

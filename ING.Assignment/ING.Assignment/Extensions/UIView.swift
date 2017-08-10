@@ -1,10 +1,4 @@
-//
-//  UIView.swift
-//  Radiodrome
-//
-//  Created by Max Bondarenko on 11/5/16.
-//  Copyright © 2016 MBKO. All rights reserved.
-//
+
 
 
 import UIKit
@@ -226,7 +220,7 @@ extension UIView {
         gradient.frame = view.bounds
         gradient.locations = [0.0,  1.0]
         gradient.colors = [colorTop, colorBottom]
-        view.layer.mask = gradient//.insertSublayer(gradient, at: 0)
+        view.layer.mask = gradient
     }
     
     func makeRoundCorners(){

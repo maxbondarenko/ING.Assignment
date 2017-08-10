@@ -31,14 +31,14 @@
 		AA924ED51E5137670081E2D6 /* ApiStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D771E4E5468004D4EE5 /* ApiStub.swift */; };
 		AA924ED61E51376E0081E2D6 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D871E4E5600004D4EE5 /* Api.swift */; };
 		AA924ED71E5137720081E2D6 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D891E4E5600004D4EE5 /* UrlBuilder.swift */; };
-		AA924ED81E5138750081E2D6 /* AccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */; };
-		AA924ED91E5138780081E2D6 /* AccountSetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */; };
+		AA924ED81E5138750081E2D6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* Account.swift */; };
+		AA924ED91E5138780081E2D6 /* AccountSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSet.swift */; };
 		AA924EDA1E51387C0081E2D6 /* ReturnCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7C1E4E5475004D4EE5 /* ReturnCode.swift */; };
 		AA924EDB1E51387F0081E2D6 /* AccountCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7D1E4E5475004D4EE5 /* AccountCurrency.swift */; };
 		AA924EDC1E5138820081E2D6 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7E1E4E5475004D4EE5 /* AccountType.swift */; };
-		AAB09D761E4E5338004D4EE5 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D751E4E5338004D4EE5 /* AccountsVC.swift */; };
+		AAB09D761E4E5338004D4EE5 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D751E4E5338004D4EE5 /* AccountsViewController.swift */; };
 		AAB09D781E4E5468004D4EE5 /* ApiStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D771E4E5468004D4EE5 /* ApiStub.swift */; };
-		AAB09D801E4E5475004D4EE5 /* AccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */; };
+		AAB09D801E4E5475004D4EE5 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* Account.swift */; };
 		AAB09D821E4E5475004D4EE5 /* ReturnCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7C1E4E5475004D4EE5 /* ReturnCode.swift */; };
 		AAB09D831E4E5475004D4EE5 /* AccountCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7D1E4E5475004D4EE5 /* AccountCurrency.swift */; };
 		AAB09D841E4E5475004D4EE5 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7E1E4E5475004D4EE5 /* AccountType.swift */; };
@@ -55,7 +55,7 @@
 		AAB09DA61E4E5C26004D4EE5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D991E4E5C26004D4EE5 /* UITableView.swift */; };
 		AAB09DA71E4E5C26004D4EE5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D9A1E4E5C26004D4EE5 /* UIView.swift */; };
 		AAB09DA81E4E5C26004D4EE5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D9B1E4E5C26004D4EE5 /* UIViewController.swift */; };
-		AAB09DAA1E4E6341004D4EE5 /* AccountSetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */; };
+		AAB09DAA1E4E6341004D4EE5 /* AccountSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSet.swift */; };
 		AAB6282C1E4E4D270076B925 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AAB6282B1E4E4D270076B925 /* Podfile */; };
 		AAD581E81E4E84350072669C /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581E71E4E84350072669C /* AccountCell.swift */; };
 		AAD581EF1E4E882D0072669C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581EE1E4E882D0072669C /* UIFont.swift */; };
@@ -72,8 +72,8 @@
 		AAD582181E4FD2620072669C /* ING.Assignment.Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AAD581FA1E4FD2620072669C /* ING.Assignment.Watch.app */; };
 		AAD582261E4FD9A10072669C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D871E4E5600004D4EE5 /* Api.swift */; };
 		AAD582271E4FD9AA0072669C /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D891E4E5600004D4EE5 /* UrlBuilder.swift */; };
-		AAD5822A1E4FD9D60072669C /* AccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */; };
-		AAD5822B1E4FD9D60072669C /* AccountSetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */; };
+		AAD5822A1E4FD9D60072669C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* Account.swift */; };
+		AAD5822B1E4FD9D60072669C /* AccountSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSet.swift */; };
 		AAD5822C1E4FD9DD0072669C /* ReturnCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7C1E4E5475004D4EE5 /* ReturnCode.swift */; };
 		AAD5822D1E4FD9DD0072669C /* AccountCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7D1E4E5475004D4EE5 /* AccountCurrency.swift */; };
 		AAD5822E1E4FD9DD0072669C /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7E1E4E5475004D4EE5 /* AccountType.swift */; };
@@ -97,8 +97,8 @@
 		AAD7BE0A1E5074EB0069E6FE /* ReturnCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7C1E4E5475004D4EE5 /* ReturnCode.swift */; };
 		AAD7BE0B1E5074EB0069E6FE /* AccountCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7D1E4E5475004D4EE5 /* AccountCurrency.swift */; };
 		AAD7BE0C1E5074EB0069E6FE /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D7E1E4E5475004D4EE5 /* AccountType.swift */; };
-		AAD7BE0D1E5074EB0069E6FE /* AccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */; };
-		AAD7BE0E1E5074EB0069E6FE /* AccountSetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */; };
+		AAD7BE0D1E5074EB0069E6FE /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D791E4E5475004D4EE5 /* Account.swift */; };
+		AAD7BE0E1E5074EB0069E6FE /* AccountSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09DA91E4E6341004D4EE5 /* AccountSet.swift */; };
 		AAD7BE0F1E5074F50069E6FE /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D891E4E5600004D4EE5 /* UrlBuilder.swift */; };
 		DE2390419D3354CE85E450BC /* Pods_ING_Assignment_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB428FDAAB00ABA0C6C06144 /* Pods_ING_Assignment_Watch_Extension.framework */; };
 		E0E1F54836E086DD7FABE546 /* Pods_ING_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913F2E346E172DF6535714AA /* Pods_ING_AssignmentTests.framework */; };
@@ -201,9 +201,11 @@
 		AA0C494D1E4E403500D6E89B /* ING.AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ING.AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0C49511E4E403500D6E89B /* ING_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ING_AssignmentUITests.swift; sourceTree = "<group>"; };
 		AA0C49531E4E403500D6E89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAB09D751E4E5338004D4EE5 /* AccountsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountsVC.swift; path = ViewControllers/AccountsVC.swift; sourceTree = "<group>"; };
+		AA607EEF1F3C7E0D0080DFF5 /* SwiftHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftHeaders.h; path = ../SwiftHeaders.h; sourceTree = "<group>"; };
+		AA607EF31F3CC9720080DFF5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = ING.Assignment/MyPlayground.playground; sourceTree = "<group>"; };
+		AAB09D751E4E5338004D4EE5 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountsViewController.swift; path = ViewControllers/AccountsViewController.swift; sourceTree = "<group>"; };
 		AAB09D771E4E5468004D4EE5 /* ApiStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiStub.swift; path = JsonStubs/ApiStub.swift; sourceTree = "<group>"; };
-		AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountDTO.swift; path = DataTransferObjects/AccountDTO.swift; sourceTree = "<group>"; };
+		AAB09D791E4E5475004D4EE5 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Account.swift; path = DataTransferObjects/Account.swift; sourceTree = "<group>"; };
 		AAB09D7C1E4E5475004D4EE5 /* ReturnCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnCode.swift; sourceTree = "<group>"; };
 		AAB09D7D1E4E5475004D4EE5 /* AccountCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCurrency.swift; sourceTree = "<group>"; };
 		AAB09D7E1E4E5475004D4EE5 /* AccountType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
@@ -220,7 +222,7 @@
 		AAB09D991E4E5C26004D4EE5 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableView.swift; path = Extensions/UITableView.swift; sourceTree = "<group>"; };
 		AAB09D9A1E4E5C26004D4EE5 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Extensions/UIView.swift; sourceTree = "<group>"; };
 		AAB09D9B1E4E5C26004D4EE5 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Extensions/UIViewController.swift; sourceTree = "<group>"; };
-		AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountSetDTO.swift; path = DataTransferObjects/AccountSetDTO.swift; sourceTree = "<group>"; };
+		AAB09DA91E4E6341004D4EE5 /* AccountSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountSet.swift; path = DataTransferObjects/AccountSet.swift; sourceTree = "<group>"; };
 		AAB6282B1E4E4D270076B925 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AAD581E71E4E84350072669C /* AccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCell.swift; path = ViewControllers/Cells/AccountCell.swift; sourceTree = "<group>"; };
 		AAD581EE1E4E882D0072669C /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = Extensions/UIFont.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 		AA0C49251E4E403500D6E89B = {
 			isa = PBXGroup;
 			children = (
+				AA607EF31F3CC9720080DFF5 /* MyPlayground.playground */,
 				AAD581E91E4E87940072669C /* Fonts */,
 				AAB6282B1E4E4D270076B925 /* Podfile */,
 				AA0C49301E4E403500D6E89B /* ING.Assignment */,
@@ -349,11 +352,12 @@
 		AA0C49301E4E403500D6E89B /* ING.Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				AAB09D731E4E51D2004D4EE5 /* ApiStubs */,
-				AAB09D721E4E51B5004D4EE5 /* DataTransferObjects */,
-				AAB09D711E4E518D004D4EE5 /* WebApi */,
+				AA607EEF1F3C7E0D0080DFF5 /* SwiftHeaders.h */,
+				AAB09D731E4E51D2004D4EE5 /* JsonDatasource */,
+				AAB09D711E4E518D004D4EE5 /* DataService */,
+				AAB09D721E4E51B5004D4EE5 /* Models */,
+				AAB09D741E4E51F3004D4EE5 /* Views */,
 				AAB09D701E4E5183004D4EE5 /* Extensions */,
-				AAB09D741E4E51F3004D4EE5 /* ViewControllers */,
 				AA0C49311E4E403500D6E89B /* AppDelegate.swift */,
 				AA0C49351E4E403500D6E89B /* Accounts.storyboard */,
 				AA0C49381E4E403500D6E89B /* Assets.xcassets */,
@@ -416,41 +420,41 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		AAB09D711E4E518D004D4EE5 /* WebApi */ = {
+		AAB09D711E4E518D004D4EE5 /* DataService */ = {
 			isa = PBXGroup;
 			children = (
 				AAB09D871E4E5600004D4EE5 /* Api.swift */,
+				AAB09D771E4E5468004D4EE5 /* ApiStub.swift */,
 				AAB09D891E4E5600004D4EE5 /* UrlBuilder.swift */,
 			);
-			name = WebApi;
+			name = DataService;
 			sourceTree = "<group>";
 		};
-		AAB09D721E4E51B5004D4EE5 /* DataTransferObjects */ = {
+		AAB09D721E4E51B5004D4EE5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				AAB09D7B1E4E5475004D4EE5 /* Enums */,
-				AAB09D791E4E5475004D4EE5 /* AccountDTO.swift */,
-				AAB09DA91E4E6341004D4EE5 /* AccountSetDTO.swift */,
+				AAB09D791E4E5475004D4EE5 /* Account.swift */,
+				AAB09DA91E4E6341004D4EE5 /* AccountSet.swift */,
 			);
-			name = DataTransferObjects;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		AAB09D731E4E51D2004D4EE5 /* ApiStubs */ = {
+		AAB09D731E4E51D2004D4EE5 /* JsonDatasource */ = {
 			isa = PBXGroup;
 			children = (
 				AAB09D8D1E4E566E004D4EE5 /* GetAccountsSuccess.json */,
-				AAB09D771E4E5468004D4EE5 /* ApiStub.swift */,
 			);
-			name = ApiStubs;
+			name = JsonDatasource;
 			sourceTree = "<group>";
 		};
-		AAB09D741E4E51F3004D4EE5 /* ViewControllers */ = {
+		AAB09D741E4E51F3004D4EE5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				AAD581E61E4E84010072669C /* Cells */,
-				AAB09D751E4E5338004D4EE5 /* AccountsVC.swift */,
+				AAB09D751E4E5338004D4EE5 /* AccountsViewController.swift */,
 			);
-			name = ViewControllers;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		AAB09D7B1E4E5475004D4EE5 /* Enums */ = {
@@ -954,9 +958,9 @@
 			files = (
 				AAB09DA01E4E5C26004D4EE5 /* UIButton.swift in Sources */,
 				AAB09DA31E4E5C26004D4EE5 /* UIImage.swift in Sources */,
-				AAB09D801E4E5475004D4EE5 /* AccountDTO.swift in Sources */,
-				AAB09D761E4E5338004D4EE5 /* AccountsVC.swift in Sources */,
-				AAB09DAA1E4E6341004D4EE5 /* AccountSetDTO.swift in Sources */,
+				AAB09D801E4E5475004D4EE5 /* Account.swift in Sources */,
+				AAB09D761E4E5338004D4EE5 /* AccountsViewController.swift in Sources */,
+				AAB09DAA1E4E6341004D4EE5 /* AccountSet.swift in Sources */,
 				AAD581E81E4E84350072669C /* AccountCell.swift in Sources */,
 				AAD581EF1E4E882D0072669C /* UIFont.swift in Sources */,
 				AAB09DA81E4E5C26004D4EE5 /* UIViewController.swift in Sources */,
@@ -985,12 +989,12 @@
 				AA924EDB1E51387F0081E2D6 /* AccountCurrency.swift in Sources */,
 				AA924ED61E51376E0081E2D6 /* Api.swift in Sources */,
 				AA924ED71E5137720081E2D6 /* UrlBuilder.swift in Sources */,
-				AA924ED91E5138780081E2D6 /* AccountSetDTO.swift in Sources */,
+				AA924ED91E5138780081E2D6 /* AccountSet.swift in Sources */,
 				AA924ED51E5137670081E2D6 /* ApiStub.swift in Sources */,
 				AA0C49471E4E403500D6E89B /* ING_AssignmentTests.swift in Sources */,
 				AA924EDA1E51387C0081E2D6 /* ReturnCode.swift in Sources */,
 				AA924EDC1E5138820081E2D6 /* AccountType.swift in Sources */,
-				AA924ED81E5138750081E2D6 /* AccountDTO.swift in Sources */,
+				AA924ED81E5138750081E2D6 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,12 +1011,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD582271E4FD9AA0072669C /* UrlBuilder.swift in Sources */,
-				AAD5822A1E4FD9D60072669C /* AccountDTO.swift in Sources */,
+				AAD5822A1E4FD9D60072669C /* Account.swift in Sources */,
 				AAD582121E4FD2620072669C /* NotificationController.swift in Sources */,
 				AAD582101E4FD2620072669C /* ExtensionDelegate.swift in Sources */,
 				AAD5822D1E4FD9DD0072669C /* AccountCurrency.swift in Sources */,
 				AAD582261E4FD9A10072669C /* Api.swift in Sources */,
-				AAD5822B1E4FD9D60072669C /* AccountSetDTO.swift in Sources */,
+				AAD5822B1E4FD9D60072669C /* AccountSet.swift in Sources */,
 				AAD5822F1E4FD9E10072669C /* ApiStub.swift in Sources */,
 				AAD5822C1E4FD9DD0072669C /* ReturnCode.swift in Sources */,
 				AAD5820E1E4FD2620072669C /* InterfaceController.swift in Sources */,
@@ -1029,7 +1033,7 @@
 				AAD7BE0F1E5074F50069E6FE /* UrlBuilder.swift in Sources */,
 				AA924EC81E508B7C0081E2D6 /* AccountCell.swift in Sources */,
 				AAD7BE091E5074E30069E6FE /* Api.swift in Sources */,
-				AAD7BE0D1E5074EB0069E6FE /* AccountDTO.swift in Sources */,
+				AAD7BE0D1E5074EB0069E6FE /* Account.swift in Sources */,
 				AA924ECC1E508CFE0081E2D6 /* String.swift in Sources */,
 				AA924ED41E508CFE0081E2D6 /* UIFont.swift in Sources */,
 				AA924ECE1E508CFE0081E2D6 /* UIColor.swift in Sources */,
@@ -1042,7 +1046,7 @@
 				AAD7BE081E5074E00069E6FE /* ApiStub.swift in Sources */,
 				AA924ECA1E508CFE0081E2D6 /* NSAttributedString.swift in Sources */,
 				AAD7BE0A1E5074EB0069E6FE /* ReturnCode.swift in Sources */,
-				AAD7BE0E1E5074EB0069E6FE /* AccountSetDTO.swift in Sources */,
+				AAD7BE0E1E5074EB0069E6FE /* AccountSet.swift in Sources */,
 				AA924ECB1E508CFE0081E2D6 /* NSDate.swift in Sources */,
 				AAD7BDF91E5072C20069E6FE /* TodayViewController.swift in Sources */,
 				AA924EC91E508B7F0081E2D6 /* AccountHeaderCell.swift in Sources */,
@@ -1385,6 +1389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ING-Assignment.TodayWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftHeaders.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1400,6 +1405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ING-Assignment.TodayWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftHeaders.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

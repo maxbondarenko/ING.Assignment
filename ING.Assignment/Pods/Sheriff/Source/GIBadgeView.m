@@ -65,6 +65,8 @@ static CGFloat const kBadgeViewDefaultFontSize = 12.0;
     self.textColor = [UIColor whiteColor];
     self.font = [UIFont boldSystemFontOfSize:kBadgeViewDefaultFontSize];
     
+    self.minimumSize = kBadgeViewMinimumSize;
+    
     // Defaults for the corner offset
     self.topOffset = 0.0f;
     self.rightOffset = 0.0f;
@@ -103,7 +105,7 @@ static CGFloat const kBadgeViewDefaultFontSize = 12.0;
 
     // Calculate the height and width we will be based on the label.
     //
-    CGFloat height = MAX(kBadgeViewMinimumSize, badgeLabelHeight + kBadgeViewPadding);
+    CGFloat height = MAX(self.minimumSize, badgeLabelHeight + kBadgeViewPadding);
     CGFloat width = MAX(height, badgeLabelWidth + (2 * kBadgeViewPadding));
 
     // Set our frame and corner radius based on those calculations.

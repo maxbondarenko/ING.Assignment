@@ -1,10 +1,4 @@
-//
-//  UIButton.swift
-//  Radiodrome
-//
-//  Created by Max Bondarenko on 11/5/16.
-//  Copyright © 2016 MBKO. All rights reserved.
-//
+
 
 import UIKit
 import Fontello_Swift
@@ -101,9 +95,6 @@ extension UIButton {
         
     }
     func setButtonStateInProgress(){
-        //self.setTitle("", for: UIControlState.normal)
-
-        let width = self.frame.width as CGFloat
         let height = self.frame.height as CGFloat
         
         let spinnerSize = 20.0  as CGFloat
@@ -113,14 +104,14 @@ extension UIButton {
         let spinner = UIActivityIndicatorView(frame: CGRect(x: /*(width/2.0)*/ 0 + (spinnerSize), y: (height / 2.0) - (spinnerSize / 2.0), width: spinnerSize, height: spinnerSize))
         
         
-        //spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.white
+ 
         spinner.isHidden = false
         spinner.startAnimating()
         spinner.color = self.titleColor(for: UIControlState.normal)
         self.addSubview(spinner)
         
         self.alpha = 1
-        //self.makeRoundCorners(color: UIColor.white, bgColor: UIColor.black, borderColor: UIColor.clear ,borderWidth: 1)
+     
         
     }
     

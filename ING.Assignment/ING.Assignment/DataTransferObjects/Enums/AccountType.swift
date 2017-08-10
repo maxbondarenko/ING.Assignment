@@ -1,10 +1,4 @@
-//
-//  TrackFavoriteStatus.swift
-//  Radiodrome
-//
-//  Created by Max Bondarenko on 1/17/17.
-//  Copyright © 2017 MBKO. All rights reserved.
-//
+
 
 import UIKit
 

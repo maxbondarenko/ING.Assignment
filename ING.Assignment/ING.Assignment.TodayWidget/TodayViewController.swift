@@ -1,10 +1,4 @@
-//
-//  TodayViewController.swift
-//  ING.Assignment.TodayWidget
-//
-//  Created by Max Bondarenko on 2/12/17.
-//  Copyright © 2017 MBKO. All rights reserved.
-//
+
 
 import UIKit
 import NotificationCenter
@@ -12,7 +6,7 @@ import NotificationCenter
 class TodayViewController: UIViewController, NCWidgetProviding {
         
     @IBOutlet weak var lvAccounts: UITableView!
-    var dsAccounts: AccountSetDTO?
+    var dsAccounts: AccountSet?
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
@@ -53,7 +47,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     func loadData(){
         ApiStub().stubGetAccounts()
         Api.getAccounts()
-            .then { (accounts: AccountSetDTO) -> () in
+            .then { (accounts: AccountSet) -> () in
                 
                 ApiStub().clearStubs()
                 
@@ -133,14 +127,14 @@ extension TodayViewController: UITableViewDelegate, UITableViewDataSource{
         if(indexPath.section == 0){
             var accountsToDisplay = dsAccounts?.paymentAccounts ?? []
          
-            accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+            accountsToDisplay = Account.filterVisibleAccounts(accountsToDisplay)
             
             cell.populateCell(account: (accountsToDisplay[indexPath.row]),editMode: false)
         }
         else{
             var accountsToDisplay = dsAccounts?.savingAccounts ?? []
             
-            accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+            accountsToDisplay = Account.filterVisibleAccounts(accountsToDisplay)
             
             cell.populateCell(account: (accountsToDisplay[indexPath.row]),editMode: false)
         }
@@ -157,13 +151,13 @@ extension TodayViewController: UITableViewDelegate, UITableViewDataSource{
         if(section == 0){
             var accountsToDisplay = dsAccounts?.paymentAccounts ?? []
             
-            accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+            accountsToDisplay = Account.filterVisibleAccounts(accountsToDisplay)
             
             return accountsToDisplay.count
         }
         else{
             var accountsToDisplay = dsAccounts?.savingAccounts ?? []
-            accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+            accountsToDisplay = Account.filterVisibleAccounts(accountsToDisplay)
             
             
             return accountsToDisplay.count

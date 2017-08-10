@@ -1,10 +1,4 @@
-//
-//  ING_AssignmentUITests.swift
-//  ING.AssignmentUITests
-//
-//  Created by Max Bondarenko on 2/10/17.
-//  Copyright © 2017 MBKO. All rights reserved.
-//
+
 
 import XCTest
 

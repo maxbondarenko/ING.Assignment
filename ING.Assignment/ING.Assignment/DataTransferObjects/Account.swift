@@ -1,15 +1,9 @@
-//
-//  ArtistDTO.swift
-//  Radiodrome
-//
-//  Created by Max Bondarenko on 12/29/16.
-//  Copyright © 2016 MBKO. All rights reserved.
-//
+
 
 import UIKit
 import Darwin
 
-class AccountDTO {
+class Account {
 
     var balanceInCents: Int64 = 0
     var currency: AccountCurrency?
@@ -22,7 +16,7 @@ class AccountDTO {
     var iban: String = ""
     
     var linkedAccountId: NSNumber?
-    weak var linkedAccount: AccountDTO?
+    weak var linkedAccount: Account?
     
     
     var productName: String?
@@ -30,7 +24,7 @@ class AccountDTO {
     var savingsTargetReached: Bool?
     var targetAmountInCents: Int64?
     
-    class func filterVisibleAccounts(_ accounts:[AccountDTO]) -> [AccountDTO]
+    class func filterVisibleAccounts(_ accounts:[Account]) -> [Account]
     {
         return accounts.filter({ $0.isVisible == true }) 
     }
@@ -70,7 +64,7 @@ class AccountDTO {
         
     }
     
-    func populate(dict: NSDictionary) -> AccountDTO? {
+    func populate(dict: NSDictionary) -> Account? {
         
         
         self.balanceInCents = (dict["accountBalanceInCents"] as? Int64) ?? 0

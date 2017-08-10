@@ -1,10 +1,4 @@
-//
-//  UIImage.swift
-//  Radiodrome
-//
-//  Created by Max Bondarenko on 12/5/16.
-//  Copyright © 2016 MBKO. All rights reserved.
-//
+
 
 import UIKit
 import Fontello_Swift

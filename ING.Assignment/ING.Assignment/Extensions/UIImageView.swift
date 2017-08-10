@@ -1,10 +1,3 @@
-//
-//  UIImageView.swift
-//  Radiodrome
-//
-//  Created by Max Bondarenko on 12/12/16.
-//  Copyright © 2016 MBKO. All rights reserved.
-//
 
 import UIKit
 import Alamofire

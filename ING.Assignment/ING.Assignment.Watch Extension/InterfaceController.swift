@@ -1,10 +1,4 @@
-//
-//  InterfaceController.swift
-//  ING.Assignment.Watch Extension
-//
-//  Created by Max Bondarenko on 2/12/17.
-//  Copyright © 2017 MBKO. All rights reserved.
-//
+
 
 import WatchKit
 import Foundation
@@ -28,10 +22,10 @@ class InterfaceController: WKInterfaceController {
         
         ApiStub().stubGetAccounts()
         Api.getAccounts()
-            .then { (accounts: AccountSetDTO) -> () in
+            .then { (accounts: AccountSet) -> () in
                 
                 ApiStub().clearStubs()
-                let visibleAccounts = AccountDTO.filterVisibleAccounts(accounts.accounts)
+                let visibleAccounts = Account.filterVisibleAccounts(accounts.accounts)
                 
                 self.tableAccounts.setNumberOfRows(visibleAccounts.count, withRowType: "AccountRowController")
                 

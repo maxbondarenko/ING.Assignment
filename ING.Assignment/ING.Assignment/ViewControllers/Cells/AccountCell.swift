@@ -1,17 +1,11 @@
-//
-//  AccountCell.swift
-//  ING.Assignment
-//
-//  Created by Max Bondarenko on 2/11/17.
-//  Copyright © 2017 MBKO. All rights reserved.
-//
+
 
 import UIKit
 import Fontello_Swift
 
 class AccountCell: UITableViewCell {
 
-    var account: AccountDTO?
+    var account: Account?
     var editMode = false
     
     @IBOutlet weak var viewContainer: UIView?
@@ -52,7 +46,7 @@ class AccountCell: UITableViewCell {
         self.account?.isVisible = !(self.account?.isVisible ?? false)
         refreshButtonToggleHidden(animated: true)
     }
-    func populateCell(account: AccountDTO, editMode: Bool){
+    func populateCell(account: Account, editMode: Bool){
         self.account = account
         self.editMode = editMode
         

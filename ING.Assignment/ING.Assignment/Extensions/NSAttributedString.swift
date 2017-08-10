@@ -1,10 +1,4 @@
-//
-//  NSAttributedString.swift
-//  Radiodrome
-//
-//  Created by Max Bondarenko on 12/13/16.
-//  Copyright © 2016 MBKO. All rights reserved.
-//
+
 
 import UIKit
 import Fontello_Swift

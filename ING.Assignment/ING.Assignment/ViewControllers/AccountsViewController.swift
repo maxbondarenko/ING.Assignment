@@ -1,38 +1,35 @@
-//
-//  AccountsVC.swift
-//  ING.Assignment
-//
-//  Created by Max Bondarenko on 2/10/17.
-//  Copyright © 2017 MBKO. All rights reserved.
-//
+
 
 import UIKit
 import Fontello_Swift
 
-class AccountsVC: UIViewController {
 
+
+class AccountsViewController: UIViewController {
+
+    
     @IBOutlet weak var lvAccounts: UITableView!
-    var dsAccounts: AccountSetDTO?
-    var editMode = false
-    let eyeImage = UIImage.fontEntypoImage(icon: Entypo.Eye, fontSize: 20, color: UIColor.ingOrange())
+    var dsAccounts: AccountSet?
+
     
-    func toggleEditMode(){
-        editMode = !editMode
-    
-        if(editMode){
-            self.navigationItem.rightBarButtonItem?.image = nil
-            self.navigationItem.rightBarButtonItem?.title = "Done"
-            self.navigationItem.rightBarButtonItem?.tintColor = UIColor.ingOrange()
-        }
-        else{
+    var editMode = false{
+        didSet{
+            if(editMode){
+                self.navigationItem.rightBarButtonItem?.image = nil
+                self.navigationItem.rightBarButtonItem?.title = "Done"
+                self.navigationItem.rightBarButtonItem?.tintColor = UIColor.ingOrange()
+            }
+            else{
+                
+                self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: self.eyeImage, landscapeImagePhone: nil, style: UIBarButtonItemStyle.plain, target: self, action: #selector(onBtnEyeTapped))
+                
+            }
             
-            self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: self.eyeImage, landscapeImagePhone: nil, style: UIBarButtonItemStyle.plain, target: self, action: #selector(onBtnEyeTapped))
-            
+            lvAccounts.reloadData()
         }
-        
-        lvAccounts.reloadData()
-        
     }
+    
+    let eyeImage = UIImage.fontEntypoImage(icon: Entypo.Eye, fontSize: 20, color: UIColor.ingOrange())
     
     
     func initNavigationController(){
@@ -45,13 +42,13 @@ class AccountsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
     
         initNavigationController()
         
         ApiStub().stubGetAccounts()
         Api.getAccounts()
-            .then { (accounts: AccountSetDTO) -> () in
+            .then { (accounts: AccountSet) -> () in
                 
                 ApiStub().clearStubs()
                 
@@ -70,8 +67,7 @@ class AccountsVC: UIViewController {
     
     
     func onBtnEyeTapped(){
-        self.toggleEditMode()
-        
+        self.editMode = !self.editMode
         
     }
 
@@ -84,7 +80,7 @@ class AccountsVC: UIViewController {
 
 
 
-extension AccountsVC: UITableViewDelegate, UITableViewDataSource{
+extension AccountsViewController: UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -120,14 +116,14 @@ extension AccountsVC: UITableViewDelegate, UITableViewDataSource{
         if(indexPath.section == 0){
             var accountsToDisplay = dsAccounts?.paymentAccounts ?? []
             if(!editMode){
-                accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+                accountsToDisplay = Account.filterVisibleAccounts(accountsToDisplay)
             }
             cell.populateCell(account: (accountsToDisplay[indexPath.row]),editMode: self.editMode)
         }
         else{
             var accountsToDisplay = dsAccounts?.savingAccounts ?? []
             if(!editMode){
-                accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+                accountsToDisplay = Account.filterVisibleAccounts(accountsToDisplay)
             }
             
             cell.populateCell(account: (accountsToDisplay[indexPath.row]),editMode: self.editMode)
@@ -144,14 +140,14 @@ extension AccountsVC: UITableViewDelegate, UITableViewDataSource{
         if(section == 0){
             var accountsToDisplay = dsAccounts?.paymentAccounts ?? []
             if(!editMode){
-                accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+                accountsToDisplay = Account.filterVisibleAccounts(accountsToDisplay)
             }
             return accountsToDisplay.count
         }
         else{
             var accountsToDisplay = dsAccounts?.savingAccounts ?? []
             if(!editMode){
-                accountsToDisplay = AccountDTO.filterVisibleAccounts(accountsToDisplay)
+                accountsToDisplay = Account.filterVisibleAccounts(accountsToDisplay)
             }
             
             return accountsToDisplay.count

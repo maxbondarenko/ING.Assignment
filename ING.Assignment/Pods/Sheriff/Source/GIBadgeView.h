@@ -29,6 +29,11 @@
 @property (nonatomic, strong) UIFont *font;
 
 /**
+ * The minimum size of the badge (defaults to 20)
+ */
+@property (nonatomic) CGFloat minimumSize;
+
+/**
  * The padding of the badge from the upper right
  */
 @property (nonatomic) CGFloat topOffset;

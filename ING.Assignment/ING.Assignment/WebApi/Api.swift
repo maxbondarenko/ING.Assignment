@@ -1,10 +1,3 @@
-//
-//  StationApi.swift
-//  Radiodrome
-//
-//  Created by Max Bondarenko on 11/16/16.
-//  Copyright © 2016 MBKO. All rights reserved.
-//
 
 import UIKit
 import PromiseKit
@@ -14,9 +7,9 @@ import Alamofire
 class Api {
  
     
-    class func getAccounts() -> Promise<AccountSetDTO>{
+    class func getAccounts() -> Promise<AccountSet>{
         
-        let promise = Promise<AccountSetDTO> { success, fail in
+        let promise = Promise<AccountSet> { success, fail in
             let url = UrlBuilder.getAccountsUrl()
             
             Alamofire.request(url, method: HTTPMethod.get, parameters: ["":""], encoding: URLEncoding.default, headers: ["":""]).responseJSON { response in
@@ -34,7 +27,7 @@ class Api {
                     let json = (try? JSONSerialization.jsonObject(with: response.data!, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: AnyObject]
                     
                     
-                    if let dto = AccountSetDTO().populate(dict: (json as? NSDictionary)!){
+                    if let dto = AccountSet().populate(dict: (json as? NSDictionary)!){
                         DispatchQueue.main.async(execute: {
                             success(dto)
                         })
