@@ -16,6 +16,7 @@
 		AA0C493C1E4E403500D6E89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0C493A1E4E403500D6E89B /* LaunchScreen.storyboard */; };
 		AA0C49471E4E403500D6E89B /* ING_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C49461E4E403500D6E89B /* ING_AssignmentTests.swift */; };
 		AA0C49521E4E403500D6E89B /* ING_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C49511E4E403500D6E89B /* ING_AssignmentUITests.swift */; };
+		AA607EF91F3D96600080DFF5 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA607EF81F3D96600080DFF5 /* AccountsViewModel.swift */; };
 		AA924EC81E508B7C0081E2D6 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581E71E4E84350072669C /* AccountCell.swift */; };
 		AA924EC91E508B7F0081E2D6 /* AccountHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD581F61E4F9BD90072669C /* AccountHeaderCell.swift */; };
 		AA924ECA1E508CFE0081E2D6 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB09D901E4E5C26004D4EE5 /* NSAttributedString.swift */; };
@@ -203,6 +204,7 @@
 		AA0C49531E4E403500D6E89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA607EEF1F3C7E0D0080DFF5 /* SwiftHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftHeaders.h; path = ../SwiftHeaders.h; sourceTree = "<group>"; };
 		AA607EF31F3CC9720080DFF5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = ING.Assignment/MyPlayground.playground; sourceTree = "<group>"; };
+		AA607EF81F3D96600080DFF5 /* AccountsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountsViewModel.swift; path = ViewModels/AccountsViewModel.swift; sourceTree = "<group>"; };
 		AAB09D751E4E5338004D4EE5 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountsViewController.swift; path = ViewControllers/AccountsViewController.swift; sourceTree = "<group>"; };
 		AAB09D771E4E5468004D4EE5 /* ApiStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiStub.swift; path = JsonStubs/ApiStub.swift; sourceTree = "<group>"; };
 		AAB09D791E4E5475004D4EE5 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Account.swift; path = DataTransferObjects/Account.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				AAB09D711E4E518D004D4EE5 /* DataService */,
 				AAB09D721E4E51B5004D4EE5 /* Models */,
 				AAB09D741E4E51F3004D4EE5 /* Views */,
+				AA607EF71F3D96360080DFF5 /* ViewModels */,
 				AAB09D701E4E5183004D4EE5 /* Extensions */,
 				AA0C49311E4E403500D6E89B /* AppDelegate.swift */,
 				AA0C49351E4E403500D6E89B /* Accounts.storyboard */,
@@ -400,6 +403,14 @@
 				0F31689B5102B1274F3E1B0F /* Pods-ING.AssignmentTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA607EF71F3D96360080DFF5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA607EF81F3D96600080DFF5 /* AccountsViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		AAB09D701E4E5183004D4EE5 /* Extensions */ = {
@@ -978,6 +989,7 @@
 				AAB09D8C1E4E5600004D4EE5 /* UrlBuilder.swift in Sources */,
 				AAB09D8A1E4E5600004D4EE5 /* Api.swift in Sources */,
 				AAB09D9F1E4E5C26004D4EE5 /* String.swift in Sources */,
+				AA607EF91F3D96600080DFF5 /* AccountsViewModel.swift in Sources */,
 				AAB09D781E4E5468004D4EE5 /* ApiStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

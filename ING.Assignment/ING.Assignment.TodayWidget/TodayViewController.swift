@@ -2,9 +2,11 @@
 
 import UIKit
 import NotificationCenter
+import RxSwift
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    let disposeBag = DisposeBag()
     @IBOutlet weak var lvAccounts: UITableView!
     var dsAccounts: AccountSet?
     
@@ -46,23 +48,23 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
     func loadData(){
         ApiStub().stubGetAccounts()
-        Api.getAccounts()
-            .then { (accounts: AccountSet) -> () in
-                
-                ApiStub().clearStubs()
-                
-                self.dsAccounts = accounts
-                self.lvAccounts.reloadData()
-                
-                //self.updatePreferredContentSize()
-                //self.resizeWidget()
-            }.catch
-            { error in
-                
-                ApiStub().clearStubs()
-                //TODO: Implement some error handling
-                
-        }
+        Api.getAccounts().subscribe{ result in
+            
+            ApiStub().clearStubs()
+            
+            if(result.error != nil){
+                //handle error and return
+                return
+            }
+            
+            let accounts = result.element
+            
+            ApiStub().clearStubs()
+            
+            self.dsAccounts = accounts
+            self.lvAccounts.reloadData()
+        
+        }.disposed(by: self.disposeBag)
     }
     
     override func viewDidLoad() {

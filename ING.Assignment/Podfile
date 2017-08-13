@@ -13,7 +13,10 @@ pod 'AlamofireImage', '~> 3.1'
 pod 'Fontello-Swift/Entypo'
 pod 'Fontello-Swift/ModernPictograms'
 
-
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'RxDataSources'
+pod 'RxAlamofire'
 
 
 target 'ING.Assignment.TodayWidget' do
@@ -21,6 +24,11 @@ target 'ING.Assignment.TodayWidget' do
     pod 'Alamofire'
     pod 'PromiseKit'
     pod 'OHHTTPStubs'
+    
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
+    pod 'RxAlamofire'
 end
 
 
@@ -32,6 +40,11 @@ target 'ING.AssignmentTests' do
     pod 'AlamofireImage', '~> 3.1'
     pod 'PromiseKit'
     pod 'OHHTTPStubs'
+    
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
+    pod 'RxAlamofire'
 end
 
 target 'ING.Assignment.Watch Extension' do
@@ -42,8 +55,12 @@ use_frameworks!
 pod 'Alamofire'
 pod 'AlamofireImage', '~> 3.1'
 pod 'PromiseKit'
-pod 'OHHTTPStubs'  
-    
+pod 'OHHTTPStubs'
+
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'RxAlamofire'
+
 end
 
 

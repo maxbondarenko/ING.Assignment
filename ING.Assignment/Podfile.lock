@@ -20,17 +20,28 @@ PODS:
   - OHHTTPStubs/NSURLSession (6.0.0):
     - OHHTTPStubs/Core
   - OHHTTPStubs/OHPathHelpers (6.0.0)
-  - PromiseKit (4.3.1):
-    - PromiseKit/Foundation (= 4.3.1)
-    - PromiseKit/QuartzCore (= 4.3.1)
-    - PromiseKit/UIKit (= 4.3.1)
-  - PromiseKit/CorePromise (4.3.1)
-  - PromiseKit/Foundation (4.3.1):
+  - PromiseKit (4.3.2):
+    - PromiseKit/Foundation (= 4.3.2)
+    - PromiseKit/QuartzCore (= 4.3.2)
+    - PromiseKit/UIKit (= 4.3.2)
+  - PromiseKit/CorePromise (4.3.2)
+  - PromiseKit/Foundation (4.3.2):
     - PromiseKit/CorePromise
-  - PromiseKit/QuartzCore (4.3.1):
+  - PromiseKit/QuartzCore (4.3.2):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (4.3.1):
+  - PromiseKit/UIKit (4.3.2):
     - PromiseKit/CorePromise
+  - RxAlamofire (3.0.3):
+    - RxAlamofire/Core (= 3.0.3)
+  - RxAlamofire/Core (3.0.3):
+    - Alamofire (~> 4.0)
+    - RxSwift (~> 3.0)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxDataSources (1.0.4):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.6.1)
   - Sheriff (0.3.2)
   - XKPhotoScrollView (0.1.2)
 
@@ -41,6 +52,10 @@ DEPENDENCIES:
   - Fontello-Swift/ModernPictograms
   - OHHTTPStubs
   - PromiseKit
+  - RxAlamofire
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
   - Sheriff (from `https://github.com/gemr/Sheriff.git`)
   - XKPhotoScrollView
 
@@ -58,10 +73,14 @@ SPEC CHECKSUMS:
   AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   Fontello-Swift: e36df108f387b8cea11ee833c4485363332119a0
   OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
-  PromiseKit: 25a114b90b932ec8169b5736bd0881fe0efa93b5
+  PromiseKit: 32430ae679605b17c15d6193679cae7bf60147f7
+  RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxDataSources: b3389acc5fe2eefb8fcd81a2b76a876ad08bc82a
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
   Sheriff: d3d03fe6d35aa781e3f42d48f3fb53ed7d04958d
   XKPhotoScrollView: 53c6eb0dfbab9492934121de5c75acc02818bb72
 
-PODFILE CHECKSUM: 36766cec0d7676966ecead3a6c04b667f56db712
+PODFILE CHECKSUM: 136832e3afca206e7ad0362608b7112bbf457235
 
 COCOAPODS: 1.2.0
